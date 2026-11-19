@@ -1,4 +1,6 @@
 data modify storage kbt:route_runtime write_record set from storage kbt:route_practice job_record
+data remove storage kbt:route_runtime write_record.recipe
+execute if data storage kbt:share arena run data modify storage kbt:route_runtime write_record.recipe set from storage kbt:share arena
 scoreboard players set #rp_layout_revision kbt.settings 0
 execute if data storage kbt:route_practice job_record.layout.revision store result score #rp_layout_revision kbt.settings run data get storage kbt:route_practice job_record.layout.revision
 scoreboard players add #rp_layout_revision kbt.settings 1

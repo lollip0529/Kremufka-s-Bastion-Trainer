@@ -17,6 +17,8 @@ execute if entity @s[gamemode=adventure] run scoreboard players set @s kbt.rp_mo
 execute if entity @s[gamemode=spectator] run scoreboard players set @s kbt.rp_mode 3
 gamemode spectator @s
 data modify storage kbt:route_practice job_record set from storage kbt:route_practice candidate
+execute if score #rp_request kbt.settings matches 2 run data remove storage kbt:share arena
+execute if score #rp_request kbt.settings matches 2 if data storage kbt:route_practice job_record.recipe run data modify storage kbt:share arena set from storage kbt:route_practice job_record.recipe
 scoreboard players operation #rp_job kbt.settings = #rp_request kbt.settings
 scoreboard players set #rp_tile kbt.settings 0
 scoreboard players set #rp_retry kbt.settings 0

@@ -1,0 +1,20 @@
+data modify storage kbt:general_practice settings set value {}
+execute store result storage kbt:general_practice settings.bastion int 1 run scoreboard players get #bastion kbt.settings
+execute store result storage kbt:general_practice settings.gold int 1 run scoreboard players get #gold kbt.settings
+execute store result storage kbt:general_practice settings.floor int 1 run scoreboard players get #floor kbt.settings
+execute store result storage kbt:general_practice settings.hoglins int 1 run scoreboard players get #hoglins kbt.settings
+execute store result storage kbt:general_practice settings.blaze int 1 run scoreboard players get #blaze kbt.settings
+execute store result storage kbt:general_practice settings.bridge_left int 1 run scoreboard players get #bridge_left kbt.settings
+execute store result storage kbt:general_practice settings.bridge_right int 1 run scoreboard players get #bridge_right kbt.settings
+execute store result storage kbt:general_practice settings.h_left int 1 run scoreboard players get #h_left kbt.settings
+execute store result storage kbt:general_practice settings.s_left_gap int 1 run scoreboard players get #s_left_gap kbt.settings
+execute store result storage kbt:general_practice settings.s_right_gap int 1 run scoreboard players get #s_right_gap kbt.settings
+execute store result storage kbt:general_practice settings.s_left_ramp int 1 run scoreboard players get #s_left_ramp kbt.settings
+execute store result storage kbt:general_practice settings.s_mid_ramp int 1 run scoreboard players get #s_mid_ramp kbt.settings
+execute store result storage kbt:general_practice settings.s_right_ramp int 1 run scoreboard players get #s_right_ramp kbt.settings
+execute store result storage kbt:general_practice settings.t_center int 1 run scoreboard players get #t_center kbt.settings
+execute store result storage kbt:general_practice settings.t_spawner int 1 run scoreboard players get #t_spawner kbt.settings
+execute store result storage kbt:general_practice settings.bridge_spawn int 1 run scoreboard players get #bridge_spawn kbt.settings
+execute store result storage kbt:general_practice settings.treasure_spawn int 1 run scoreboard players get #treasure_spawn kbt.settings
+execute store result storage kbt:general_practice settings.housing_spawn int 1 run scoreboard players get #housing_spawn kbt.settings
+execute store result storage kbt:general_practice settings.stables_spawn int 1 run scoreboard players get #stables_spawn kbt.settings

@@ -1,0 +1,1 @@
+tellraw @a [{"text":"Imports updated: ","color":"green"},{"score":{"name":"#ki_count_route","objective":"kbt.settings"}},{"text":" routes, "},{"score":{"name":"#ki_count_trail","objective":"kbt.settings"}},{"text":" trails, "},{"score":{"name":"#ki_count_playlist","objective":"kbt.settings"}},{"text":" playlists"}]

@@ -1,0 +1,13 @@
+data modify storage kbt:route_browser chat_labels set value {type:"",difficulty:"All",source:"Custom"}
+execute if score #rb_seen_type kbt.settings matches 0 run data modify storage kbt:route_browser chat_labels.type set value "Bridge"
+execute if score #rb_seen_type kbt.settings matches 1 run data modify storage kbt:route_browser chat_labels.type set value "Treasure"
+execute if score #rb_seen_type kbt.settings matches 2 run data modify storage kbt:route_browser chat_labels.type set value "Housing"
+execute if score #rb_seen_type kbt.settings matches 3 run data modify storage kbt:route_browser chat_labels.type set value "Stables"
+execute if score #rb_seen_diff kbt.settings matches 1 run data modify storage kbt:route_browser chat_labels.difficulty set value "Beginner"
+execute if score #rb_seen_diff kbt.settings matches 2 run data modify storage kbt:route_browser chat_labels.difficulty set value "Intermediate"
+execute if score #rb_seen_diff kbt.settings matches 3 run data modify storage kbt:route_browser chat_labels.difficulty set value "Advanced"
+execute if score #rb_seen_source kbt.settings matches 0 run data modify storage kbt:route_browser chat_labels.source set value "Built-in"
+execute unless score #rb_seen_diff kbt.settings matches 1..3 run tellraw @s [{"text":"--- ","color":"gold"},{"nbt":"chat_labels.source","storage":"kbt:route_browser"},{"text":" / "},{"nbt":"chat_labels.type","storage":"kbt:route_browser","color":"gold","bold":true},{"text":" / ","color":"gray"},{"nbt":"chat_labels.difficulty","storage":"kbt:route_browser","color":"gold"},{"text":" ---"}]
+execute if score #rb_seen_diff kbt.settings matches 1 run tellraw @s [{"text":"--- ","color":"gold"},{"nbt":"chat_labels.source","storage":"kbt:route_browser"},{"text":" / "},{"nbt":"chat_labels.type","storage":"kbt:route_browser","color":"gold","bold":true},{"text":" / ","color":"gray"},{"nbt":"chat_labels.difficulty","storage":"kbt:route_browser","color":"green"},{"text":" ---"}]
+execute if score #rb_seen_diff kbt.settings matches 2 run tellraw @s [{"text":"--- ","color":"gold"},{"nbt":"chat_labels.source","storage":"kbt:route_browser"},{"text":" / "},{"nbt":"chat_labels.type","storage":"kbt:route_browser","color":"gold","bold":true},{"text":" / ","color":"gray"},{"nbt":"chat_labels.difficulty","storage":"kbt:route_browser","color":"yellow"},{"text":" ---"}]
+execute if score #rb_seen_diff kbt.settings matches 3 run tellraw @s [{"text":"--- ","color":"gold"},{"nbt":"chat_labels.source","storage":"kbt:route_browser"},{"text":" / "},{"nbt":"chat_labels.type","storage":"kbt:route_browser","color":"gold","bold":true},{"text":" / ","color":"gray"},{"nbt":"chat_labels.difficulty","storage":"kbt:route_browser","color":"red"},{"text":" ---"}]

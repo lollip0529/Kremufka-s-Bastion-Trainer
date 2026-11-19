@@ -1,0 +1,2 @@
+execute if entity @s[type=minecraft:player] at @s run function kbt:movement/playlists/run_player
+execute unless entity @s[type=minecraft:player] as @p[distance=..8] at @s run function kbt:movement/playlists/run_player

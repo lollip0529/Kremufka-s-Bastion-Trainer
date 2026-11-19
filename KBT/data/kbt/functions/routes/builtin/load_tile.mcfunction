@@ -81,4 +81,3 @@ execute positioned 1056 128 1024 run function kbt:routes/builtin/check_chunk
 execute positioned 1056 128 1040 run function kbt:routes/builtin/check_chunk
 execute positioned 1056 128 1056 run function kbt:routes/builtin/check_chunk
 execute if score #bi_loaded kbt.settings matches 1 run function #kbt:routes/builtin_load_tile
-execute if score #bi_loaded kbt.settings matches 1 if data storage kbt:route_practice job_record.layout{imported:1b} run function kbt:imports/load_tile

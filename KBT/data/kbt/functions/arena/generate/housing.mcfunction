@@ -3,6 +3,7 @@ function kbt:settings/apply
 scoreboard players set bastion_type bastion.temp 4
 scoreboard players set bastion_rotation bastion.temp 1
 execute in the_nether positioned 1000 129 1000 run function bastionbuilder:generate
+execute in minecraft:the_nether run function kbt:arena/seed_chests
 execute in minecraft:the_nether run function kbt:arena/floor
 execute in minecraft:the_nether run function kbt:debug/initialize
 

@@ -1,7 +1,7 @@
 scoreboard players set #rp_fast_job kbt.settings 0
 execute if score #rp_restart kbt.settings matches 1 if score #rp_request kbt.settings matches 2 if data storage kbt:route_practice candidate.layout{mode:"snapshot",schema:1} run scoreboard players set #rp_fast_job kbt.settings 1
-execute if score #rp_request kbt.settings matches 1 in minecraft:the_nether run function kbt:routes/practice/mobs/capture
-execute if score #rp_request kbt.settings matches 1 if data storage kbt:route_mobs captured[0] run data modify storage kbt:route_practice candidate.mobs set from storage kbt:route_mobs captured
+execute if score #rp_request kbt.settings matches 1 unless data storage kbt:share importing in minecraft:the_nether run function kbt:routes/practice/mobs/capture
+execute if score #rp_request kbt.settings matches 1 unless data storage kbt:share importing if data storage kbt:route_mobs captured[0] run data modify storage kbt:route_practice candidate.mobs set from storage kbt:route_mobs captured
 function kbt:routes/practice/stop
 execute if score #rp_request kbt.settings matches 2 if score @s kbt.creator matches 1 run function kbt:routes/creator/exit
 schedule clear kbt:practice/generate

@@ -22,4 +22,6 @@ execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings if data sto
 execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings if data storage kbt:route_runtime write_record.mobs if data storage kbt:routes editor.redo[0] run data modify storage kbt:routes editor.redo[].mobs set from storage kbt:route_runtime write_record.mobs
 execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings if data storage kbt:routes editor.history[0] run data modify storage kbt:routes editor.history[].layout set from storage kbt:route_runtime write_record.layout
 execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings if data storage kbt:routes editor.redo[0] run data modify storage kbt:routes editor.redo[].layout set from storage kbt:route_runtime write_record.layout
-tellraw @s {"text":"Arena layout saved. Create Route also preserves the generated mobs.","color":"green"}
+execute unless data storage kbt:share importing run tellraw @s {"text":"Arena layout saved. Create Route also preserves the generated mobs.","color":"green"}
+execute if data storage kbt:share importing run tellraw @s [{"text":"Imported ","color":"green"},{"nbt":"write_record.name","storage":"kbt:route_runtime","color":"gold"}]
+data remove storage kbt:share importing

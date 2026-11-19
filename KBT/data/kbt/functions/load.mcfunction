@@ -23,5 +23,6 @@ function kbt:movement/specific/init
 function kbt:movement/playlists/init
 function kbt:movement/playlists/ui/init
 function kbt:practice/difficulty
+function kbt:share/init
 execute in minecraft:the_nether run function kbt:debug/apply
 tellraw @a [{"text":"KBT loaded","color":"gold"}]

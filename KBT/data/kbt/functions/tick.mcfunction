@@ -7,6 +7,7 @@ function kbt:routes/practice/tick
 function kbt:routes/creator/tick
 function kbt:practice/tick
 function kbt:lobby/tick
+function kbt:share/tick
 execute in minecraft:the_nether run function kbt:credits/tick
 execute in minecraft:the_nether run function kbt:routes/settings/tick
 execute in minecraft:the_nether run function kbt:debug/glow/tick

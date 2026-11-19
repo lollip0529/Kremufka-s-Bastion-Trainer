@@ -25,4 +25,5 @@ execute unless data storage kbt:route_runtime list_queue[0] run tellraw @s {"tex
 execute if data storage kbt:route_runtime list_queue[0] run function kbt:routes/creator/catalog/list_row
 function kbt:routes/creator/catalog/list_navigation
 
-tellraw @s {"text":"[Drafts]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 130"}}
+scoreboard players enable @s kbt.share
+tellraw @s [{"text":"[Drafts]","color":"yellow","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 130"}},{"text":" [Import]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger kbt.share set 3"},"hoverEvent":{"action":"show_text","contents":{"text":"Add a route someone shared with you"}}}]

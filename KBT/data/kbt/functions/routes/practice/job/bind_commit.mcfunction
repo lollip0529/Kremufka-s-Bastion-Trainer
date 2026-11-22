@@ -17,6 +17,12 @@ execute if score #rc_protected kbt.settings matches 0 if data storage kbt:route_
 scoreboard players set #rp_draft_id kbt.settings 0
 execute store result score #rp_draft_id kbt.settings run data get storage kbt:routes draft.id
 execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings run data modify storage kbt:routes draft.layout set from storage kbt:route_runtime write_record.layout
+execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings run data remove storage kbt:routes draft.recipe
+execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings if data storage kbt:route_runtime write_record.recipe run data modify storage kbt:routes draft.recipe set from storage kbt:route_runtime write_record.recipe
+execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings run data remove storage kbt:routes editor.history[].recipe
+execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings if data storage kbt:route_runtime write_record.recipe run data modify storage kbt:routes editor.history[].recipe set from storage kbt:route_runtime write_record.recipe
+execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings run data remove storage kbt:routes editor.redo[].recipe
+execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings if data storage kbt:route_runtime write_record.recipe run data modify storage kbt:routes editor.redo[].recipe set from storage kbt:route_runtime write_record.recipe
 execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings if data storage kbt:route_runtime write_record.mobs run data modify storage kbt:routes draft.mobs set from storage kbt:route_runtime write_record.mobs
 execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings if data storage kbt:route_runtime write_record.mobs if data storage kbt:routes editor.history[0] run data modify storage kbt:routes editor.history[].mobs set from storage kbt:route_runtime write_record.mobs
 execute if score #rp_draft_id kbt.settings = #rc_target kbt.settings if data storage kbt:route_runtime write_record.mobs if data storage kbt:routes editor.redo[0] run data modify storage kbt:routes editor.redo[].mobs set from storage kbt:route_runtime write_record.mobs

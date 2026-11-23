@@ -11,6 +11,7 @@ function kbt:routes/creator/catalog/scan_begin
 execute if data storage kbt:route_runtime found run data modify storage kbt:routes records set from storage kbt:route_runtime catalog_result
 execute unless data storage kbt:route_runtime found run data modify storage kbt:routes records append from storage kbt:share record
 function kbt:routes/catalog_changed
+data remove storage kbt:share recipe
 data modify storage kbt:share recipe set from storage kbt:share record.recipe
 scoreboard players set #sh_wait kbt.settings 0
 tag @s add kbt.share_binder

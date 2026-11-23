@@ -1,6 +1,7 @@
 scoreboard players set #sh_ok kbt.settings 0
 data remove storage kbt:route_practice candidate
 execute if data storage kbt:share payload{v:1} if data storage kbt:share payload.record.recipe.seed run data modify storage kbt:route_practice candidate set from storage kbt:share payload.record
+execute if data storage kbt:share file if data storage kbt:share payload{v:1,blocks:1b} run data modify storage kbt:route_practice candidate set from storage kbt:share payload.record
 execute if data storage kbt:route_practice candidate run data modify storage kbt:route_practice candidate.source set value 1
 execute if data storage kbt:route_practice candidate run data modify storage kbt:route_practice candidate.id set value 1
 execute if data storage kbt:route_practice candidate run function kbt:routes/practice/validate/start

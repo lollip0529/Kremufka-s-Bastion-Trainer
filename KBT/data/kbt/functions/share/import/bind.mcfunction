@@ -1,6 +1,6 @@
 tag @s remove kbt.share_binder
 tellraw @s {"text":"Building the route's bastion","color":"aqua"}
-function kbt:share/regenerate
+execute if data storage kbt:share recipe run function kbt:share/regenerate
 data modify storage kbt:share importing set value 1b
 scoreboard players operation @s kbt.rp_bind = #sh_id kbt.settings
 function kbt:routes/practice/input/bind

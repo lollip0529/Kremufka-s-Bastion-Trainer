@@ -1,0 +1,2 @@
+data modify storage kbt:movement_playlists ui.remove_pending set from storage kbt:movement_playlists ui.pick
+tellraw @s [{"text":"Remove playlist: ","color":"yellow"},{"nbt":"ui.remove_pending.name","storage":"kbt:movement_playlists","color":"aqua"},{"text":"? ","color":"yellow"},{"text":"[Confirm] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger kbt.mpl_action set 7"}},{"text":"[Cancel]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger kbt.mpl_action set 8"}}]

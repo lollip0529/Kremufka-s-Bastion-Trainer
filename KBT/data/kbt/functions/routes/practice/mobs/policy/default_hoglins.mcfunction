@@ -1,0 +1,4 @@
+execute if data storage kbt:route_practice route{bastion:0} run data modify storage kbt:route_mobs queue append value {type:"minecraft:hoglin",data:{Pos:[978.5d,156.0d,1015.5d],Rotation:[0.0f,0.0f],HandItems:[{},{}],ArmorItems:[{},{},{},{}]}}
+execute if data storage kbt:route_practice route{bastion:1} run data modify storage kbt:route_mobs queue append value {type:"minecraft:hoglin",data:{Pos:[1019.5d,168.0d,1003.5d],Rotation:[0.0f,0.0f],HandItems:[{},{}],ArmorItems:[{},{},{},{}]}}
+execute if data storage kbt:route_practice route{bastion:2} run data modify storage kbt:route_mobs queue append value {type:"minecraft:hoglin",data:{Pos:[1031.5d,130.0d,1024.5d],Rotation:[0.0f,0.0f],HandItems:[{},{}],ArmorItems:[{},{},{},{}]}}
+execute if data storage kbt:route_practice route{bastion:3} run data modify storage kbt:route_mobs queue append value {type:"minecraft:hoglin",data:{Pos:[1008.5d,154.0d,1023.5d],Rotation:[0.0f,0.0f],HandItems:[{},{}],ArmorItems:[{},{},{},{}]}}

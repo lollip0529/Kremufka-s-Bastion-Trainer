@@ -1,0 +1,1 @@
+execute if score @s kbt.rc_wiz matches 1 run function kbt:routes/creator/catalog/list_begin

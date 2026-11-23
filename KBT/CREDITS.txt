@@ -1,0 +1,2 @@
+Bastion generator is taken from llama practice v3.14 with llama's consent
+Movement practice is my adaptation of azaleacolon3's idea with her consent

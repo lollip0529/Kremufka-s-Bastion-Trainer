@@ -1,0 +1,3 @@
+execute as @e[type=minecraft:armor_stand,tag=kbt.rc_preview] unless entity @s[nbt={NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b}] run data merge entity @s {NoGravity:1b,Marker:1b,Invisible:1b,Invulnerable:1b,Motion:[0.0d,0.0d,0.0d]}
+execute as @e[type=minecraft:armor_stand,tag=kbt.rc_preview,scores={kbt.rc_type=8}] if data entity @s ArmorItems[0].tag.kbt_preview_pos[2] run function kbt:routes/creator/preview/restore_position
+execute as @e[type=minecraft:armor_stand,tag=kbt.rc_preview,scores={kbt.rc_type=13}] if data entity @s ArmorItems[0].tag.kbt_preview_pos[2] run function kbt:routes/creator/preview/restore_position

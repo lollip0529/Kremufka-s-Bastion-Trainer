@@ -1,0 +1,2 @@
+scoreboard players set #mpl_check_context kbt.settings 0
+execute if entity @s[type=minecraft:player,nbt={Dimension:"minecraft:the_nether"},nbt=!{Health:0.0f}] unless score @s kbt.creator matches 1 unless score @s kbt.edit matches 1..3 unless score #rc_generating kbt.settings matches 1 unless score #rp_job kbt.settings matches 1.. unless score #rp_active kbt.settings matches 1 in minecraft:the_nether positioned 1000.5 129.0 -999.5 if entity @s[distance=..32] run scoreboard players set #mpl_check_context kbt.settings 1

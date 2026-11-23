@@ -1,0 +1,26 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:gilded_blackstone",
+    "minecraft:chiseled_polished_blackstone",
+    "minecraft:gold_block",
+    "minecraft:netherrack",
+    "minecraft:lava_bucket",
+    "minecraft:cooked_porkchop",
+    "minecraft:spawner",
+    "minecraft:compass",
+    "minecraft:clock",
+    "minecraft:glowstone_dust",
+    "minecraft:rotten_flesh",
+    "minecraft:polished_blackstone_brick_stairs",
+    "minecraft:chest",
+    "minecraft:cracked_polished_blackstone_bricks",
+    "minecraft:arrow",
+    "minecraft:redstone",
+    "minecraft:name_tag",
+    "minecraft:piglin_spawn_egg",
+    "minecraft:hoglin_spawn_egg",
+    "minecraft:paper",
+    "minecraft:gold_ingot"
+  ]
+}

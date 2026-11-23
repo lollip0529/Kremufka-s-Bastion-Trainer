@@ -1,0 +1,25 @@
+data remove storage kbt:route_runtime element.initial_block
+execute if block ~ ~ ~ #kbt:routes/identify/group_0 run function kbt:routes/creator/blocks/group_0
+execute if block ~ ~ ~ #kbt:routes/identify/group_1 run function kbt:routes/creator/blocks/group_1
+execute if block ~ ~ ~ #kbt:routes/identify/group_2 run function kbt:routes/creator/blocks/group_2
+execute if block ~ ~ ~ #kbt:routes/identify/group_3 run function kbt:routes/creator/blocks/group_3
+execute if block ~ ~ ~ #kbt:routes/identify/group_4 run function kbt:routes/creator/blocks/group_4
+execute if block ~ ~ ~ #kbt:routes/identify/group_5 run function kbt:routes/creator/blocks/group_5
+execute if block ~ ~ ~ #kbt:routes/identify/group_6 run function kbt:routes/creator/blocks/group_6
+execute if block ~ ~ ~ #kbt:routes/identify/group_7 run function kbt:routes/creator/blocks/group_7
+execute if block ~ ~ ~ #kbt:routes/identify/group_8 run function kbt:routes/creator/blocks/group_8
+execute if block ~ ~ ~ #kbt:routes/identify/group_9 run function kbt:routes/creator/blocks/group_9
+execute if block ~ ~ ~ #kbt:routes/identify/group_10 run function kbt:routes/creator/blocks/group_10
+execute if block ~ ~ ~ #kbt:routes/identify/group_11 run function kbt:routes/creator/blocks/group_11
+execute if block ~ ~ ~ #kbt:routes/identify/group_12 run function kbt:routes/creator/blocks/group_12
+execute if block ~ ~ ~ #kbt:routes/identify/group_13 run function kbt:routes/creator/blocks/group_13
+execute if block ~ ~ ~ #kbt:routes/identify/group_14 run function kbt:routes/creator/blocks/group_14
+execute if block ~ ~ ~ #kbt:routes/identify/group_15 run function kbt:routes/creator/blocks/group_15
+execute if block ~ ~ ~ #kbt:routes/identify/group_16 run function kbt:routes/creator/blocks/group_16
+execute if block ~ ~ ~ #kbt:routes/identify/group_17 run function kbt:routes/creator/blocks/group_17
+execute if block ~ ~ ~ #kbt:routes/identify/group_18 run function kbt:routes/creator/blocks/group_18
+execute if block ~ ~ ~ #kbt:routes/identify/group_19 run function kbt:routes/creator/blocks/group_19
+execute if block ~ ~ ~ #kbt:routes/identify/group_20 run function kbt:routes/creator/blocks/group_20
+execute if block ~ ~ ~ #kbt:routes/identify/group_21 run function kbt:routes/creator/blocks/group_21
+execute if block ~ ~ ~ #kbt:routes/identify/group_22 run function kbt:routes/creator/blocks/group_22
+execute if block ~ ~ ~ #kbt:routes/identify/group_23 run function kbt:routes/creator/blocks/group_23

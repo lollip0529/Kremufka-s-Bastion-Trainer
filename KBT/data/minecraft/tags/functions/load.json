@@ -1,0 +1,7 @@
+{
+  "values": [
+    "bastionbuilder:internal/utils/rng/init",
+    "bastionbuilder:internal/init",
+    "kbt:load"
+  ]
+}

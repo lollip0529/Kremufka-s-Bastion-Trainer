@@ -1,0 +1,1 @@
+execute if data storage kbt:movement_playlists ui.record.id if data storage kbt:movement_playlists ui.record.name if data storage kbt:movement_playlists ui.record.trail_ids run function kbt:movement/playlists/ui/entry_saved

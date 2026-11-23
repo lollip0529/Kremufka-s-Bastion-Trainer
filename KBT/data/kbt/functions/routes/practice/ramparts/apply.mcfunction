@@ -1,0 +1,8 @@
+scoreboard players set #rr_active kbt.settings 0
+execute if data storage kbt:route_practice route.setup{ramparts_schema:1} if data storage kbt:route_practice route{bastion:0} if data storage kbt:route_practice route.setup{bridge_left:2} run scoreboard players set #rr_active kbt.settings 1
+execute if data storage kbt:route_practice route.setup{ramparts_schema:1} if data storage kbt:route_practice route{bastion:0} if data storage kbt:route_practice route.setup{bridge_right:2} run scoreboard players set #rr_active kbt.settings 1
+execute if data storage kbt:route_practice route.setup{ramparts_schema:1} if data storage kbt:route_practice route{bastion:2} if data storage kbt:route_practice route.setup{h_left:3} run scoreboard players set #rr_active kbt.settings 1
+execute if data storage kbt:route_practice route.setup{ramparts_schema:1} if data storage kbt:route_practice route{bastion:3} if data storage kbt:route_practice route.setup{s_left_ramp:3} run scoreboard players set #rr_active kbt.settings 1
+execute if data storage kbt:route_practice route.setup{ramparts_schema:1} if data storage kbt:route_practice route{bastion:3} if data storage kbt:route_practice route.setup{s_mid_ramp:3} run scoreboard players set #rr_active kbt.settings 1
+execute if data storage kbt:route_practice route.setup{ramparts_schema:1} if data storage kbt:route_practice route{bastion:3} if data storage kbt:route_practice route.setup{s_right_ramp:3} run scoreboard players set #rr_active kbt.settings 1
+execute if score #rr_active kbt.settings matches 1 in minecraft:the_nether run function kbt:routes/practice/ramparts/apply_active

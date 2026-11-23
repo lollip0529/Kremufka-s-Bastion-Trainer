@@ -1,0 +1,2 @@
+execute if data storage kbt:routes draft{mode:"movement"} run function kbt:movement/creator/give_tools
+execute unless data storage kbt:routes draft{mode:"movement"} run function kbt:routes/creator/give_route_wand

@@ -1,5 +1,3 @@
-scoreboard players set #it_holding kbt.settings 0
-execute if data entity @s HandItems[1]{id:"minecraft:gold_ingot"} run scoreboard players set #it_holding kbt.settings 1
 scoreboard players set #it_hurt kbt.settings 0
 execute store result score #it_hurt kbt.settings run data get entity @s HurtTime
 scoreboard players set #it_alive kbt.settings 0

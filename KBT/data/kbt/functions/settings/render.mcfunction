@@ -4,3 +4,5 @@ execute if score @s kbt.page matches 1 run function kbt:settings/pages/bastion/r
 execute if score @s kbt.page matches 2 run function kbt:settings/pages/debug/render
 execute if score @s kbt.page matches 3 run function kbt:settings/pages/scoreboard/render
 clear @a[distance=..8] #kbt:menu_tokens{kbt_menu:1b}
+data modify storage kbt:settings_poll Items set value []
+data modify storage kbt:settings_poll Items set from block ~ ~ ~ Items

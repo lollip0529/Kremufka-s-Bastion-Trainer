@@ -1,0 +1,2 @@
+function kbt:imports/progress/measure
+title @s actionbar [{"text":"Imports ","color":"gold"},{"text":"[","color":"dark_gray"},{"nbt":"filled","storage":"kbt:import_progress","color":"yellow"},{"nbt":"empty","storage":"kbt:import_progress","color":"gray"},{"text":"] ","color":"dark_gray"},{"score":{"name":"#ki_hud_pct","objective":"kbt.settings"},"color":"yellow"},{"text":"% | ","color":"gray"},{"nbt":"stage","storage":"kbt:import_progress","color":"white"}]

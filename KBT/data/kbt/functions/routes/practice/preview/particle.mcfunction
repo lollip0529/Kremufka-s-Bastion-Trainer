@@ -7,3 +7,4 @@ execute if score @s kbt.rp_type matches 6 run particle minecraft:dust 0.2 0.9 1 
 execute if score @s kbt.rp_type matches 7 run particle minecraft:end_rod ~ ~0.3 ~ 0.15 0.2 0.15 0 6 force @a[tag=kbt.rp_runner]
 execute if score @s kbt.rp_type matches 10 run function kbt:routes/practice/preview/optional_place_outline
 execute if score @s kbt.rp_type matches 11 run function kbt:routes/practice/preview/optional_break_outline
+execute if score @s kbt.rp_type matches 21 run function kbt:routes/practice/preview/throw_gold_x

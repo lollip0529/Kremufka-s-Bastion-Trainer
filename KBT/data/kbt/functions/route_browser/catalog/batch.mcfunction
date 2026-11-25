@@ -12,6 +12,7 @@ execute unless data storage kbt:route_browser current{ready:1b} run scoreboard p
 execute unless score #rb_record_type kbt.settings = #rb_seen_type kbt.settings run scoreboard players set #rb_match kbt.settings 0
 execute unless score #rb_record_source kbt.settings = #rb_seen_source kbt.settings run scoreboard players set #rb_match kbt.settings 0
 execute unless score #rb_seen_diff kbt.settings matches 0 unless score #rb_record_diff kbt.settings = #rb_seen_diff kbt.settings run scoreboard players set #rb_match kbt.settings 0
+execute if score #rb_match kbt.settings matches 1 if score #rb_seen_fav kbt.settings matches 1 run function kbt:route_browser/catalog/favorites/filter_record
 execute if score #rb_match kbt.settings matches 1 run data modify storage kbt:route_browser matches append from storage kbt:route_browser current
 scoreboard players remove #rb_budget kbt.settings 1
 execute if score #rb_budget kbt.settings matches 1.. if data storage kbt:route_browser queue[0] run function kbt:route_browser/catalog/batch

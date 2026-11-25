@@ -1,4 +1,6 @@
 data modify storage kbt:route_practice route set from storage kbt:route_practice job_record
+scoreboard players set #ph_loop kbt.settings 0
+scoreboard players set #rp_navigation kbt.settings 0
 function kbt:routes/settings/capture_mode
 difficulty easy
 function kbt:routes/practice/mobs/restore
@@ -26,10 +28,12 @@ gamemode survival @s
 execute in minecraft:the_nether at @s run function kbt:practice/extinguish
 effect give @s minecraft:instant_health 1 10 true
 function kbt:loadout/apply
+function kbt:arena/drop_cleanup/begin
 function kbt:practice/clear_drops
 function kbt:practice/movement/arm
 execute store result score #run_type kbt.settings run data get storage kbt:route_practice route.bastion
 scoreboard players operation #arena_type kbt.settings = #run_type kbt.settings
 scoreboard players set #arena_ready kbt.settings 1
+function kbt:routes/practice/phase/capture
 function kbt:routes/practice/stage/begin
 execute if score #rp_active kbt.settings matches 1 run function kbt:routes/practice/hooks/start

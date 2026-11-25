@@ -1,4 +1,9 @@
+function kbt:arena/lava_fix/cancel
 function kbt:settings/init
+execute in minecraft:the_nether run function kbt:savestate/init
+execute in minecraft:the_nether run forceload add 936 936 1063 1063
+scoreboard players set #arena_drop_ticks kbt.settings 0
+function kbt:settings/presets/init
 scoreboard objectives add kbt.discord trigger
 execute in minecraft:the_nether run forceload add 1003 -997
 function kbt:practice/extinguish_restore
@@ -22,7 +27,9 @@ function kbt:route_browser/catalog/init
 function kbt:movement/specific/init
 function kbt:movement/playlists/init
 function kbt:movement/playlists/ui/init
-function kbt:practice/difficulty
 function kbt:share/init
+function kbt:imports/init
+function kbt:practice/difficulty
 execute in minecraft:the_nether run function kbt:debug/apply
 tellraw @a [{"text":"KBT loaded","color":"gold"}]
+execute if data storage kbt:release pending run schedule function kbt:release/prepare 2t replace

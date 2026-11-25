@@ -7,6 +7,8 @@ execute store result score #bridge_left kbt.settings run data get storage kbt:ge
 execute store result score #bridge_right kbt.settings run data get storage kbt:general_practice settings.bridge_right
 execute store result score #h_left kbt.settings run data get storage kbt:general_practice settings.h_left
 execute store result score #s_left_gap kbt.settings run data get storage kbt:general_practice settings.s_left_gap
+scoreboard players set #s_good_gap kbt.settings 0
+execute if data storage kbt:general_practice settings.s_good_gap store result score #s_good_gap kbt.settings run data get storage kbt:general_practice settings.s_good_gap
 execute store result score #s_right_gap kbt.settings run data get storage kbt:general_practice settings.s_right_gap
 execute store result score #s_left_ramp kbt.settings run data get storage kbt:general_practice settings.s_left_ramp
 execute store result score #s_mid_ramp kbt.settings run data get storage kbt:general_practice settings.s_mid_ramp
@@ -17,3 +19,22 @@ execute store result score #bridge_spawn kbt.settings run data get storage kbt:g
 execute store result score #treasure_spawn kbt.settings run data get storage kbt:general_practice settings.treasure_spawn
 execute store result score #housing_spawn kbt.settings run data get storage kbt:general_practice settings.housing_spawn
 execute store result score #stables_spawn kbt.settings run data get storage kbt:general_practice settings.stables_spawn
+scoreboard players set #s_triple_chest kbt.settings 0
+execute if data storage kbt:general_practice settings.s_triple_chest store result score #s_triple_chest kbt.settings run data get storage kbt:general_practice settings.s_triple_chest
+scoreboard players set #s_lantern_chest kbt.settings 0
+execute if data storage kbt:general_practice settings.s_lantern_chest store result score #s_lantern_chest kbt.settings run data get storage kbt:general_practice settings.s_lantern_chest
+scoreboard players set #s_single_chest kbt.settings 0
+execute if data storage kbt:general_practice settings.s_single_chest store result score #s_single_chest kbt.settings run data get storage kbt:general_practice settings.s_single_chest
+scoreboard players set #s_bad_gap kbt.settings 0
+execute if data storage kbt:general_practice settings.s_bad_gap store result score #s_bad_gap kbt.settings run data get storage kbt:general_practice settings.s_bad_gap
+scoreboard players set #cs_b0 kbt.settings 0
+execute if data storage kbt:general_practice settings.custom_bridge store result score #cs_b0 kbt.settings run data get storage kbt:general_practice settings.custom_bridge
+scoreboard players set #cs_b1 kbt.settings 0
+execute if data storage kbt:general_practice settings.custom_treasure store result score #cs_b1 kbt.settings run data get storage kbt:general_practice settings.custom_treasure
+scoreboard players set #cs_b2 kbt.settings 0
+execute if data storage kbt:general_practice settings.custom_housing store result score #cs_b2 kbt.settings run data get storage kbt:general_practice settings.custom_housing
+scoreboard players set #cs_b3 kbt.settings 0
+execute if data storage kbt:general_practice settings.custom_stables store result score #cs_b3 kbt.settings run data get storage kbt:general_practice settings.custom_stables
+scoreboard players add #cs_revision kbt.settings 1
+scoreboard players set #bridge_lava kbt.settings 0
+execute if data storage kbt:general_practice settings.bridge_lava store result score #bridge_lava kbt.settings run data get storage kbt:general_practice settings.bridge_lava

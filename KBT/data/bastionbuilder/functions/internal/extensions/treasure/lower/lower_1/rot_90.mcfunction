@@ -26,5 +26,4 @@ execute positioned ~-25 ~36 ~33 run function bastionbuilder:internal/place/mobs/
 execute positioned ~-4 ~36 ~20 run function bastionbuilder:internal/place/mobs/piglin_melee
 execute positioned ~-5 ~36 ~19 run function bastionbuilder:internal/place/mobs/piglin_melee
 execute positioned ~-4 ~36 ~18 run function bastionbuilder:internal/place/mobs/piglin_melee
-
 execute if score id_piglins bastion.settings matches 1.. positioned ~-34 ~6 ~3 as @e[type=piglin, tag=bastion_mob, dx=31, dy=30, dz=31] run data modify entity @s CustomName set value '{"text":"lower","color":"yellow"}'

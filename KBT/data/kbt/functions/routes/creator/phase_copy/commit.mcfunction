@@ -3,7 +3,7 @@ execute if score #rc_show_all kbt.settings matches 1 run scoreboard players set 
 function kbt:routes/creator/history/push
 data modify storage kbt:route_runtime phase_copy.candidate.ready set value 0b
 data modify storage kbt:route_runtime phase_copy.candidate.tool set value 18
-data modify storage kbt:route_runtime phase_copy.candidate.tool_name set value "Rebuild Previous Phase"
+data modify storage kbt:route_runtime phase_copy.candidate.tool_name set value "Fix current phase"
 execute store result storage kbt:route_runtime phase_copy.candidate.stage int 1 run scoreboard players get #cp_target_start kbt.settings
 data remove storage kbt:route_runtime phase_copy.candidate.checkpoint_chain
 data remove storage kbt:route_runtime phase_copy.candidate.checkpoint_regenerate

@@ -11,3 +11,4 @@ execute if score @s kbt.rc_type matches 12 run particle minecraft:dust 1 0.4 1 1
 execute if score @s kbt.rc_type matches 13 run particle minecraft:end_rod ~ ~1.6 ~ 0.1 0.1 0.1 0 1 force @a[scores={kbt.creator=1}]
 execute if score @s kbt.rc_type matches 15 run particle minecraft:dust 1 0.2 0.1 1 ~ ~0.25 ~ 0.4 0.15 0.4 0 4 force @a[scores={kbt.creator=1}]
 execute if score @s kbt.rc_type matches 17 run particle minecraft:dust 1 0.2 0.1 1 ~ ~0.25 ~ 0.4 0.15 0.4 0 4 force @a[scores={kbt.creator=1}]
+execute if score @s kbt.rc_type matches 21 run function kbt:routes/creator/preview/throw_gold_x

@@ -17,6 +17,16 @@ scoreboard objectives add kbt.right dummy
 scoreboard objectives add kbt.specific dummy
 scoreboard objectives add kbt.slg dummy
 scoreboard objectives add kbt.srg dummy
+scoreboard objectives add kbt.sgg dummy
+scoreboard objectives add kbt.stc dummy
+execute unless score #s_triple_chest kbt.settings matches 0..1 run scoreboard players set #s_triple_chest kbt.settings 0
+scoreboard objectives add kbt.slc dummy
+execute unless score #s_lantern_chest kbt.settings matches 0..1 run scoreboard players set #s_lantern_chest kbt.settings 0
+scoreboard objectives add kbt.ssc dummy
+execute unless score #s_single_chest kbt.settings matches 0..1 run scoreboard players set #s_single_chest kbt.settings 0
+scoreboard objectives add kbt.sbg dummy
+execute unless score #s_bad_gap kbt.settings matches 0..1 run scoreboard players set #s_bad_gap kbt.settings 0
+execute unless score #s_good_gap kbt.settings matches 0..1 run scoreboard players set #s_good_gap kbt.settings 0
 scoreboard objectives add kbt.slr dummy
 scoreboard objectives add kbt.smr dummy
 scoreboard objectives add kbt.srr dummy
@@ -32,13 +42,13 @@ execute unless score #rb_choice kbt.settings matches 0..3 run scoreboard players
 scoreboard players set #rb_shown_type kbt.settings -1
 scoreboard players set #mv_shown_type kbt.settings -1
 execute unless score #gold kbt.settings matches 0..2 run scoreboard players set #gold kbt.settings 0
-execute unless score #floor kbt.settings matches 0..1 run scoreboard players set #floor kbt.settings 0
+execute unless score #floor kbt.settings matches 0..3 run scoreboard players set #floor kbt.settings 0
 execute unless score #hoglins kbt.settings matches 0..1 run scoreboard players set #hoglins kbt.settings 0
 execute unless score #blaze kbt.settings matches 0..5 run scoreboard players set #blaze kbt.settings 0
-execute unless score #bridge_spawn kbt.settings matches 0..9 run scoreboard players set #bridge_spawn kbt.settings 0
-execute unless score #treasure_spawn kbt.settings matches 0..6 run scoreboard players set #treasure_spawn kbt.settings 0
-execute unless score #housing_spawn kbt.settings matches 0..6 run scoreboard players set #housing_spawn kbt.settings 0
-execute unless score #stables_spawn kbt.settings matches 0..7 run scoreboard players set #stables_spawn kbt.settings 0
+execute unless score #bridge_spawn kbt.settings matches 0..10 run scoreboard players set #bridge_spawn kbt.settings 0
+execute unless score #treasure_spawn kbt.settings matches 0..7 run scoreboard players set #treasure_spawn kbt.settings 0
+execute unless score #housing_spawn kbt.settings matches 0..7 run scoreboard players set #housing_spawn kbt.settings 0
+execute unless score #stables_spawn kbt.settings matches 0..8 run scoreboard players set #stables_spawn kbt.settings 0
 execute unless score #debug kbt.settings matches 0..1 run scoreboard players set #debug kbt.settings 0
 execute unless score #natural_mobs kbt.settings matches 0..1 run scoreboard players set #natural_mobs kbt.settings 0
 execute unless score #bridge_left kbt.settings matches 0..2 run scoreboard players set #bridge_left kbt.settings 2
@@ -51,3 +61,5 @@ execute unless score #s_right_ramp kbt.settings matches 0..3 run scoreboard play
 execute unless score #t_center kbt.settings matches 0..4 run scoreboard players set #t_center kbt.settings 4
 execute unless score #t_spawner kbt.settings matches 0..1 run scoreboard players set #t_spawner kbt.settings 0
 execute unless score #h_left kbt.settings matches 0..3 run scoreboard players set #h_left kbt.settings 3
+scoreboard objectives add kbt.blava dummy
+execute unless score #bridge_lava kbt.settings matches 0..1 run scoreboard players set #bridge_lava kbt.settings 0

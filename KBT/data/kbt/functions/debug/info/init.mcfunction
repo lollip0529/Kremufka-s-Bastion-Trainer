@@ -10,6 +10,7 @@ scoreboard objectives add kbt.it_layout dummy
 scoreboard objectives add kbt.damage minecraft.custom:minecraft.damage_taken
 scoreboard objectives add kbt.blocks dummy
 advancement revoke @a only kbt:debug/placed_block
+advancement revoke @a only kbt:debug/ignited_block
 team add kbt.info_pigs
 team modify kbt.info_pigs color yellow
 team modify kbt.info_pigs prefix {"text":"Piglin "}

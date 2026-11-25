@@ -1,4 +1,7 @@
 scoreboard objectives add kbt.rc_setup trigger
+scoreboard objectives add kbt.rc_gen trigger
+execute if data storage kbt:route_setup edit_generation run function kbt:routes/creator/generation/cancel
+tag @a remove kbt.rp_generation
 scoreboard objectives add kbt.rc_wiz dummy
 scoreboard objectives add kbt.rc_genmode dummy
 schedule clear kbt:routes/setup/generate

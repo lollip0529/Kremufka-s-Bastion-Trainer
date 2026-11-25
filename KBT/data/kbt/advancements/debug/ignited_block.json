@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "fire": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:fire",
+        "location": {
+          "dimension": "minecraft:the_nether",
+          "position": {
+            "x": {"min": 936, "max": 1063.999},
+            "y": {"min": 128, "max": 255.999},
+            "z": {"min": 936, "max": 1063.999}
+          }
+        }
+      }
+    },
+    "soul_fire": {
+      "trigger": "minecraft:placed_block",
+      "conditions": {
+        "block": "minecraft:soul_fire",
+        "location": {
+          "dimension": "minecraft:the_nether",
+          "position": {
+            "x": {"min": 936, "max": 1063.999},
+            "y": {"min": 128, "max": 255.999},
+            "z": {"min": 936, "max": 1063.999}
+          }
+        }
+      }
+    }
+  },
+  "requirements": [["fire", "soul_fire"]],
+  "rewards": {"function": "kbt:debug/info/ignited_block"}
+}

@@ -23,3 +23,5 @@ function kbt:movement/creator/controls
 function kbt:routes/creator/remove/give
 execute if score @s kbt.creator matches 1 run clear @s minecraft:warped_fungus_on_a_stick{kbtRouteWand:1b,kbtRouteTool:9}
 execute if score @s kbt.creator matches 1 unless data entity @s Inventory[{tag:{CustomModelData:9,kbtRouteWand:1b,kbtRouteTool:9}}] run give @s minecraft:warped_fungus_on_a_stick{CustomModelData:9,kbtRouteWand:1b,kbtRouteTool:9,Unbreakable:1b,HideFlags:4,display:{Name:'{"text":"Trail Editor","color":"gold","italic":false}',Lore:['{"text":"Right-click to open the Trail Editor","color":"gray","italic":false}','{"text":"Change name and difficulty, save or play your trail","color":"gray","italic":false}']}} 1
+function kbt:routes/creator/edit/give
+function kbt:routes/creator/move/give

@@ -12,7 +12,9 @@ execute if data storage kbt:route_runtime element{type:12} run data merge entity
 execute if data storage kbt:route_runtime element{type:13,pending:1b} run tag @s add kbt.rc_text_pending
 execute if data storage kbt:route_runtime element{type:13} run data modify entity @s ArmorItems set value [{},{},{},{}]
 execute if data storage kbt:route_runtime element{type:13} run data modify entity @s ArmorItems[3] set from storage kbt:route_runtime element.head
-execute if data storage kbt:route_runtime element{type:13} run data modify entity @s Rotation set from storage kbt:route_runtime element.rotation
+execute if data storage kbt:route_runtime element{type:13} run data modify storage kbt:head_pose source set value [0.0f,0.0f]
+execute if data storage kbt:route_runtime element{type:13} run data modify storage kbt:head_pose source set from storage kbt:route_runtime element.rotation
+execute if data storage kbt:route_runtime element{type:13} run function kbt:routes/head/pose
 execute if data storage kbt:route_runtime element{type:5,regenerate:1b} run data merge entity @s {CustomName:'{"text":"New Phase","color":"light_purple"}',CustomNameVisible:1b}
 execute if data storage kbt:route_runtime element{type:15,pending:1b} unless data storage kbt:route_runtime element.area_point run tag @s add kbt.rc_text_pending
 execute if data storage kbt:route_runtime element{type:15,pending:1b,area_point:1b} run tag @s add kbt.rc_message_area

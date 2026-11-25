@@ -1,5 +1,4 @@
 scoreboard players enable @s kbt.rc_menu
-
 tellraw @s {"text":"--- TRAIL EDITOR ---","color":"yellow","bold":true}
 tellraw @s [{"text":"Trail: ","color":"gray"},{"nbt":"draft.name","storage":"kbt:routes","color":"aqua"},{"text":"  ID: ","color":"gray"},{"nbt":"draft.id","storage":"kbt:routes","color":"gold"}]
 tellraw @s [{"text":"Tools: ","color":"gray"},{"text":"[Get Tools]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 10"},"hoverEvent":{"action":"show_text","contents":{"text":"Get all trail tools, Remove, Undo and Redo in your inventory"}}}]
@@ -9,3 +8,6 @@ tellraw @s [{"text":"Preview: ","color":"gray"},{"text":"[Preview All]","color":
 tellraw @s [{"text":"Edit: ","color":"gray"},{"text":"[Remove Last]","color":"red","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 12"},"hoverEvent":{"action":"show_text","contents":{"text":"Remove the last task or Follow Point; use the Remove tool for Start or Finish"}}}]
 tellraw @s [{"text":"Run: ","color":"gray"},{"text":"[Save Trail] ","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 15"}},{"text":"[Play Trail]","color":"gold","bold":true,"clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 38"},"hoverEvent":{"action":"show_text","contents":{"text":"Save edits, restore the bastion and test from Start"}}}]
 tellraw @s {"text":"[Exit Editor]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 9"},"hoverEvent":{"action":"show_text","contents":{"text":"Keep the draft and return to the Movement lobby"}}}
+tellraw @s {"text":"[Bastion Generation]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 133"},"hoverEvent":{"action":"show_text","contents":{"text":"Change the saved bastion and its variants while keeping the route points"}}}
+tellraw @s {"text":"[Edit Element]","color":"aqua","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 49"},"hoverEvent":{"action":"show_text","contents":{"text":"Get Edit: aim at an object to edit it"}}}
+tellraw @s {"text":"[Move]","color":"green","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 135"},"hoverEvent":{"action":"show_text","contents":{"text":"Select an object, then move it with chat controls or Move here"}}}

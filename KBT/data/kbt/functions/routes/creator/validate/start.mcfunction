@@ -1,4 +1,5 @@
 scoreboard players set #rc_save_valid kbt.settings 1
+execute if data storage kbt:routes draft.import_key run scoreboard players set #rc_save_valid kbt.settings 0
 scoreboard players set #rc_id kbt.settings 0
 scoreboard players set #rc_type_check kbt.settings -1
 scoreboard players set #rc_diff kbt.settings 0

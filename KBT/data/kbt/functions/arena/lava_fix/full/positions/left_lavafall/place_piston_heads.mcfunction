@@ -1,0 +1,2 @@
+execute positioned ^ ^ ^1 if block ^ ^ ^ air run function kbt:arena/lava_fix/full/positions/left_lavafall/place_piston_head
+execute positioned ^2 ^ ^1 if block ^ ^ ^ air run function kbt:arena/lava_fix/full/positions/left_lavafall/place_piston_head

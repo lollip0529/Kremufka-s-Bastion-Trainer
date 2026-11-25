@@ -6,6 +6,7 @@ execute if score #rc_tool kbt.settings matches 11 run function kbt:routes/creato
 execute if score #rc_tool kbt.settings matches 11 if data storage kbt:route_runtime element.initial_block run scoreboard players set #rc_valid kbt.settings 1
 execute if score #rc_tool kbt.settings matches 6 run scoreboard players set #rc_valid kbt.settings 1
 execute if score #rc_tool kbt.settings matches 8 run scoreboard players set #rc_valid kbt.settings 1
+execute if score #rc_tool kbt.settings matches 21 if data storage kbt:route_runtime previous run scoreboard players set #rc_valid kbt.settings 1
 execute if score #rc_valid kbt.settings matches 1 run function kbt:routes/creator/points/capture
 execute if score #rc_valid kbt.settings matches 1 run data modify storage kbt:route_runtime element.block_pos set value [0,0,0]
 execute if score #rc_valid kbt.settings matches 1 store result score #rc_x kbt.settings run data get entity @s Pos[0]

@@ -1,5 +1,6 @@
 scoreboard players enable @s kbt.rc_menu
 tellraw @s {"text":"--- ADVANCED ---","color":"aqua","bold":true}
+tellraw @s {"text":"[Validate Current Layout]","color":"green","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 137"},"hoverEvent":{"action":"show_text","contents":{"text":"Check Start clearance and required block targets. Advisory only; does not change your route."}}}
 tellraw @s [{"text":"Layout: ","color":"gray"},{"text":"[Bind Current Layout]","color":"gold","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 26"},"hoverEvent":{"action":"show_text","contents":{"text":"Save the current arena as the route's starting layout"}}}]
 tellraw @s [{"text":"Remove: ","color":"gray"},{"text":"[Last Element] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 12"}},{"text":"[Start] ","color":"red","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 22"}},{"text":"[Finish]","color":"red","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 23"}}]
 tellraw @s [{"text":"Draft: ","color":"gray"},{"text":"[New Route] ","color":"gold","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 18"}},{"text":"[Discard Edits]","color":"red","clickEvent":{"action":"run_command","value":"/trigger kbt.rc_menu set 24"}}]

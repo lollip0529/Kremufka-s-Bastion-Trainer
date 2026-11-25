@@ -1,6 +1,19 @@
 scoreboard objectives add kbt.creator dummy
 scoreboard objectives add kbt.rc_menu trigger
 scoreboard objectives add kbt.rc_pick trigger
+scoreboard objectives add kbt.rc_head trigger
+scoreboard players set @a kbt.rc_head 0
+scoreboard players enable @a kbt.rc_head
+scoreboard objectives add kbt.rc_tab trigger
+execute unless score #rc_list_tab kbt.settings matches 0..1 run scoreboard players set #rc_list_tab kbt.settings 0
+scoreboard players set @a kbt.rc_tab 0
+scoreboard players enable @a kbt.rc_tab
+scoreboard objectives add kbt.rc_edit trigger
+scoreboard objectives add kbt.rc_move trigger
+scoreboard players set @a kbt.rc_move 0
+scoreboard players enable @a kbt.rc_move
+data remove storage kbt:route_move session
+data remove storage kbt:route_edit selection
 scoreboard objectives add kbt.rc_name dummy
 scoreboard objectives add kbt.rc_splash minecraft.used:minecraft.splash_potion
 scoreboard objectives add kbt.rc_exit dummy
@@ -22,6 +35,8 @@ scoreboard players enable @a kbt.rc_open
 scoreboard players enable @a kbt.rc_delete
 data remove storage kbt:routes editor.pending
 scoreboard players set #rc_confirm kbt.settings 0
+execute if score #lv_active kbt.settings matches 1 run function kbt:routes/creator/layout_check/cancel
+scoreboard players set #rc_projectile_ticks kbt.settings 2
 execute if data storage kbt:routes draft{tool:14} run data modify storage kbt:routes draft.tool_name set value "New Phase"
 execute as @a[scores={kbt.creator=1}] if data entity @s Inventory[{tag:{kbtRouteWand:1b,kbtRouteTool:14,display:{Name:'{"text":"Regenerate Bastion","color":"light_purple","italic":false}'}}}] run function kbt:routes/creator/give_route_wand
 execute as @a[scores={kbt.creator=1}] at @s run function kbt:routes/creator/preview/rebuild

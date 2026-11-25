@@ -1,0 +1,1 @@
+execute unless score stables_left_rampart bastion.settings = #sg_kind kbt.settings unless score stables_middle_rampart bastion.settings = #sg_kind kbt.settings unless score stables_right_rampart bastion.settings = #sg_kind kbt.settings run function kbt:practice/stables/ramparts/assign

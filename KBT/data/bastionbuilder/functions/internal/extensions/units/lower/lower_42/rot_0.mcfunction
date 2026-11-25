@@ -25,4 +25,4 @@ execute positioned ~4 ~8 ~33 run function bastionbuilder:internal/utils/chest_lo
 execute positioned ~27 ~8 ~11 run function bastionbuilder:internal/utils/chest_loot/mark_chest
 execute positioned ~34 ~8 ~34 run function bastionbuilder:internal/utils/chest_loot/mark_chest
 execute positioned ~38 ~8 ~6 run function bastionbuilder:internal/utils/chest_loot/mark_chest
-execute if score id_piglins bastion.settings matches 1.. positioned ~4 ~2 ~3 as @e[type=piglin, tag=bastion_mob, dx=36, dy=14, dz=36] run data modify entity @s CustomName set value '{"text":"lower","color":"yellow"}'
+execute if score id_piglins bastion.settings matches 1.. positioned ~4 ~2 ~3 as @e[type=piglin, tag=bastion_mob, dx=36, dy=14, dz=36] run function kbt:debug/mark_origin/7

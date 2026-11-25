@@ -46,3 +46,4 @@ execute if score @s kbt.origin matches 0 if data storage kbt:debug {name:'{"colo
 execute if score @s kbt.origin matches 0 if data storage kbt:debug {name:'{"color":"yellow","text":"walls/side_wall_1"}'} run scoreboard players set @s kbt.origin 20
 execute if score @s kbt.origin matches 0 if data storage kbt:debug {name:'{"color":"yellow","text":"walls/wall_base"}'} run scoreboard players set @s kbt.origin 21
 execute if score @s kbt.origin matches 0 if data storage kbt:debug {name:'{"color":"yellow","text":"walls/wall_base_0"}'} run scoreboard players set @s kbt.origin 22
+execute if score #debug kbt.settings matches 0 run function kbt:debug/hide

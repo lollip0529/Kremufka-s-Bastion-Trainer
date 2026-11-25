@@ -6,5 +6,4 @@ function bastionbuilder:internal/processors/bridge/rampart_plates/plate_0/proces
 function bastionbuilder:internal/processors/bridge/rampart_plates/plate_0/processor_3/rot_0
 function bastionbuilder:internal/processors/bridge/rampart_plates/plate_0/processor_4/rot_0
 function bastionbuilder:internal/origins/bridge/rampart_plates/plate_0
-function bastionbuilder:internal/extensions/bridge/rampart_plates/plate_0/rot_0
 fill ~ 254 ~ ~ 255 ~ air

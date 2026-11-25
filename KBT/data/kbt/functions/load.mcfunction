@@ -7,6 +7,8 @@ scoreboard players set #ui_cd_active kbt.settings 12
 scoreboard players set #arena_high_dirty kbt.settings 1
 scoreboard players set #arena_outer_dirty kbt.settings 1
 scoreboard players set #arena_floor_dirty kbt.settings 1
+scoreboard players set #arena_built_type kbt.settings -2
+scoreboard players set #bb_inplace kbt.settings 0
 advancement revoke @a only kbt:debug/dirty_high
 advancement revoke @a only kbt:debug/dirty_outer
 advancement revoke @a only kbt:debug/dirty_floor

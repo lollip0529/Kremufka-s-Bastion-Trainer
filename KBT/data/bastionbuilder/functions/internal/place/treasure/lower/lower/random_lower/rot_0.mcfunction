@@ -1,6 +1,8 @@
 scoreboard players set max bastion.rng 100
 function bastionbuilder:internal/utils/rng/new_int
 scoreboard players operation treasure_lower bastion.temp = out bastion.rng
+execute if score #bb_inplace kbt.settings matches 1 unless score treasure_lower bastion.temp = #last_t_lo kbt.settings run function kbt:arena/clear_lower_treasure
+scoreboard players operation #last_t_lo kbt.settings = treasure_lower bastion.temp
 execute if score treasure_lower bastion.temp matches 1 run function bastionbuilder:internal/place/treasure/lower/lower_0/rot_0
 execute if score treasure_lower bastion.temp matches 2 run function bastionbuilder:internal/place/treasure/lower/lower_1/rot_0
 execute if score treasure_lower bastion.temp matches 3 run function bastionbuilder:internal/place/treasure/lower/lower_2/rot_0

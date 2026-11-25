@@ -3,6 +3,7 @@ scoreboard players set #rp_job kbt.settings 0
 execute if score #rp_completed_job kbt.settings matches 2 run scoreboard players set #arena_high_dirty kbt.settings 1
 execute if score #rp_completed_job kbt.settings matches 2 run scoreboard players set #arena_outer_dirty kbt.settings 1
 execute if score #rp_completed_job kbt.settings matches 2 run scoreboard players set #arena_floor_dirty kbt.settings 1
+execute if score #rp_completed_job kbt.settings matches 2 run scoreboard players set #arena_built_type kbt.settings -2
 execute if score #rp_completed_job kbt.settings matches 2 run function kbt:arena/clear_ground_items
 execute in minecraft:the_nether run function kbt:routes/practice/cleanup
 function kbt:routes/practice/job/restore_mode

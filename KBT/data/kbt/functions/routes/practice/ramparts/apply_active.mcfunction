@@ -23,4 +23,5 @@ execute if score #rr_tile_drops kbt.settings matches 1 run gamerule doTileDrops 
 execute if score #rr_mob_loot kbt.settings matches 1 run gamerule doMobLoot true
 function kbt:routes/practice/mobs/capture
 data modify storage kbt:route_practice rampart_mobs set from storage kbt:route_mobs captured
+scoreboard players set #arena_built_type kbt.settings -2
 function kbt:debug/initialize

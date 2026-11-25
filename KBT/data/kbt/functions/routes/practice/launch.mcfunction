@@ -30,6 +30,7 @@ function kbt:practice/clear_drops
 function kbt:practice/movement/arm
 execute store result score #run_type kbt.settings run data get storage kbt:route_practice route.bastion
 scoreboard players operation #arena_type kbt.settings = #run_type kbt.settings
+scoreboard players set #arena_built_type kbt.settings -2
 scoreboard players set #arena_ready kbt.settings 1
 function kbt:routes/practice/stage/begin
 execute if score #rp_active kbt.settings matches 1 run function kbt:routes/practice/hooks/start

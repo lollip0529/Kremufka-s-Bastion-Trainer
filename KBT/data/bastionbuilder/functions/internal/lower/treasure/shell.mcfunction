@@ -1,31 +1,12 @@
 setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"NONE",name:"bastionbuilder:lower/treasure/shell_outer"}
 setblock ~ ~1 ~ redstone_block
-fill ~ ~ ~ ~ ~1 ~ air
-setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"NONE",integrity:0.3f,name:"bastionbuilder:lower/treasure/shell_outer_2"}
-execute store result block ~ ~ ~ seed long 1 run scoreboard players add #bb_decay bastion.temp 1
-setblock ~ ~1 ~ redstone_block
-fill ~ ~ ~ ~ ~1 ~ air
-setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"NONE",integrity:0.5f,name:"bastionbuilder:lower/treasure/shell_outer_1"}
-execute store result block ~ ~ ~ seed long 1 run scoreboard players add #bb_decay bastion.temp 1
-setblock ~ ~1 ~ redstone_block
-fill ~ ~ ~ ~ ~1 ~ air
-setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"NONE",integrity:0.01f,name:"bastionbuilder:lower/treasure/shell_outer_0"}
-execute store result block ~ ~ ~ seed long 1 run scoreboard players add #bb_decay bastion.temp 1
-setblock ~ ~1 ~ redstone_block
-fill ~ ~ ~ ~ ~1 ~ air
-setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"NONE",name:"bastionbuilder:lower/treasure/shell_roof"}
-setblock ~ ~1 ~ redstone_block
-fill ~ ~ ~ ~ ~1 ~ air
-setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"NONE",integrity:0.3f,name:"bastionbuilder:lower/treasure/shell_roof_2"}
-execute store result block ~ ~ ~ seed long 1 run scoreboard players add #bb_decay bastion.temp 1
-setblock ~ ~1 ~ redstone_block
-fill ~ ~ ~ ~ ~1 ~ air
-setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"NONE",integrity:0.15f,name:"bastionbuilder:lower/treasure/shell_roof_1"}
-execute store result block ~ ~ ~ seed long 1 run scoreboard players add #bb_decay bastion.temp 1
-setblock ~ ~1 ~ redstone_block
-fill ~ ~ ~ ~ ~1 ~ air
-setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"NONE",integrity:0.3f,name:"bastionbuilder:lower/treasure/shell_roof_0"}
-execute store result block ~ ~ ~ seed long 1 run scoreboard players add #bb_decay bastion.temp 1
-setblock ~ ~1 ~ redstone_block
-setblock ~ ~ ~ minecraft:polished_blackstone_bricks
-setblock ~ ~1 ~ minecraft:polished_blackstone_bricks
+execute positioned ~19 ~11 ~15 run function bastionbuilder:internal/place/mobs/piglin_melee
+execute positioned ~19 ~11 ~27 run function bastionbuilder:internal/place/mobs/piglin_melee
+execute positioned ~20 ~36 ~4 run function bastionbuilder:internal/place/mobs/piglin_melee
+execute positioned ~18 ~36 ~4 run function bastionbuilder:internal/place/mobs/piglin_melee
+execute positioned ~19 ~36 ~5 run function bastionbuilder:internal/place/mobs/piglin_melee
+scoreboard players operation #bb_rf bastion.temp = #bb_decay bastion.temp
+scoreboard players operation #bb_rf bastion.temp %= #bb_c4 bastion.temp
+scoreboard players operation #bb_decay bastion.temp /= #bb_c4 bastion.temp
+execute if score #bb_decay bastion.temp matches ..3 run function bastionbuilder:internal/lower/reseed
+execute positioned ~2 ~46 ~2 run function bastionbuilder:internal/lower/treasure/shell_roof

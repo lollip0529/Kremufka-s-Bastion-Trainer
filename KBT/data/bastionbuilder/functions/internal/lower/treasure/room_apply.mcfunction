@@ -1,9 +1,6 @@
 scoreboard players set #bb_rad_2 bastion.temp 2
 scoreboard players set #bb_rad_3 bastion.temp 3
 scoreboard players set #bb_rad_4 bastion.temp 4
-execute positioned ~7 ~ ~7 run function bastionbuilder:internal/lower/treasure/p/bases_lava_basin_0
-execute positioned ~30 ~31 ~2 run function bastionbuilder:internal/lower/treasure/p/walls_top_main_entrance_1
-execute positioned ~18 ~11 ~7 run function bastionbuilder:internal/lower/treasure/p/stairs_lower_stairs_0
 scoreboard players operation #bb_ch bastion.temp = #bb_lo0 bastion.temp
 scoreboard players operation #bb_ch bastion.temp %= #bb_rad_2 bastion.temp
 scoreboard players operation #bb_lo0 bastion.temp /= #bb_rad_2 bastion.temp

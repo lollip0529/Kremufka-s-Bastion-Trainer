@@ -16,6 +16,8 @@ execute positioned ~7 ~44 ~15 run function bastionbuilder:internal/lower/treasur
 execute positioned ~7 ~44 ~24 run function bastionbuilder:internal/lower/treasure/p/extensions_small_bridge_0_3
 execute positioned ~24 ~44 ~30 run function bastionbuilder:internal/lower/treasure/p/extensions_small_bridge_0_2
 execute positioned ~28 ~44 ~30 run function bastionbuilder:internal/lower/treasure/p/extensions_small_bridge_3_2
+setblock ~3 ~22 ~8 minecraft:basalt[axis=x]
+setblock ~4 ~26 ~27 minecraft:basalt[axis=x]
 setblock ~7 ~22 ~17 minecraft:basalt[axis=y]
 setblock ~7 ~30 ~9 minecraft:basalt[axis=y]
 setblock ~7 ~30 ~13 minecraft:basalt[axis=y]

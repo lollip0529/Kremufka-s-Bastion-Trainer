@@ -14,4 +14,5 @@ execute if score #fort_distance kbt.settings matches 3 at @s run tp @s ^ ^ ^192
 execute if score #fort_distance kbt.settings matches 4 at @s run tp @s ^ ^ ^256
 execute at @s align xz run tp @s ~ ~ ~ 0 0
 execute at @s run forceload add ~ ~ ~47 ~47
+scoreboard players set #arena_outer_dirty kbt.settings 1
 schedule function kbt:fortpie/prepare 2t replace

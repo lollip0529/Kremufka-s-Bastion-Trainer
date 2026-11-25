@@ -1,4 +1,4 @@
-execute in the_nether run function kbt:arena/reset
+execute in the_nether run function kbt:arena/reset_for_gen
 function kbt:settings/apply
 scoreboard players set bastion_type bastion.temp 4
 scoreboard players set bastion_rotation bastion.temp 1

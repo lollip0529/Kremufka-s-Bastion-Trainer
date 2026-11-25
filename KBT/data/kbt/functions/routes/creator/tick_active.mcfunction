@@ -1,6 +1,6 @@
-execute as @a[scores={kbt.creator=1},nbt={Health:0.0f}] run function kbt:routes/creator/exit_active
-execute as @a[scores={kbt.creator=1},nbt={Dimension:"minecraft:the_nether"},nbt=!{Health:0.0f}] at @s run function kbt:routes/creator/preview/tick
-execute as @a[scores={kbt.creator=1},nbt={Dimension:"minecraft:the_nether"},nbt=!{Health:0.0f}] at @s run function kbt:routes/creator/text/tick
+execute as @a[scores={kbt.creator=1,kbt.hp=0}] run function kbt:routes/creator/exit_active
+execute in minecraft:the_nether as @a[scores={kbt.creator=1,kbt.hp=1..},distance=0..] at @s run function kbt:routes/creator/preview/tick
+execute in minecraft:the_nether as @a[scores={kbt.creator=1,kbt.hp=1..},distance=0..] at @s run function kbt:routes/creator/text/tick
 scoreboard players remove @a[scores={kbt.creator=1,kbt.rc_cd=1..}] kbt.rc_cd 1
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=1..7}] run function kbt:routes/creator/select_tool
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=40..41}] run function kbt:routes/creator/select_tool

@@ -2,6 +2,7 @@ function kbt:settings/init
 scoreboard players set #kbt_tick5 kbt.settings -1
 scoreboard players set #kbt_tick20 kbt.settings -1
 scoreboard players set #kbt_tick100 kbt.settings -1
+scoreboard players set #arena_high_dirty kbt.settings 1
 execute store result score #natural_actual kbt.settings run gamerule doMobSpawning
 scoreboard objectives add kbt.discord trigger
 execute in minecraft:the_nether run forceload add 1003 -997

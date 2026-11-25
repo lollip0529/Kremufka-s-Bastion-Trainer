@@ -1,4 +1,3 @@
-scoreboard players set #rp_same kbt.settings 0
-execute if score #rp_fast_job kbt.settings matches 1 store success score #rp_same kbt.settings run execute if blocks ~48 ~ ~48 ~63 ~127 ~63 984 128 984 all
-execute if score #rp_same kbt.settings matches 1 run scoreboard players set #rp_copy kbt.settings 1
-execute unless score #rp_same kbt.settings matches 1 store success score #rp_copy kbt.settings run clone ~48 ~ ~48 ~63 ~127 ~63 984 128 984 replace force
+scoreboard players set #rp_copy kbt.settings 1
+execute unless blocks ~48 ~ ~48 ~63 ~75 ~63 984 128 984 all store success score #rp_copy kbt.settings run clone ~48 ~ ~48 ~63 ~75 ~63 984 128 984 replace force
+execute if score #rp_copy kbt.settings matches 1 unless blocks ~48 ~76 ~48 ~63 ~127 ~63 984 204 984 all store success score #rp_copy kbt.settings run clone ~48 ~76 ~48 ~63 ~127 ~63 984 204 984 replace force

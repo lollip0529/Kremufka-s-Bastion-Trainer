@@ -1,1 +1,3 @@
-execute store success score #rp_copy kbt.settings run clone 952 128 1016 967 255 1031 ~16 ~ ~80 replace force
+scoreboard players set #rp_copy kbt.settings 1
+execute unless blocks 952 128 1016 967 203 1031 ~16 ~ ~80 all store success score #rp_copy kbt.settings run clone 952 128 1016 967 203 1031 ~16 ~ ~80 replace force
+execute if score #rp_copy kbt.settings matches 1 unless blocks 952 204 1016 967 255 1031 ~16 ~76 ~80 all store success score #rp_copy kbt.settings run clone 952 204 1016 967 255 1031 ~16 ~76 ~80 replace force

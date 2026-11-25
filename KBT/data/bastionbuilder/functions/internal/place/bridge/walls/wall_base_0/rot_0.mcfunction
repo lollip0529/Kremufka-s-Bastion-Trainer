@@ -1,7 +1,0 @@
-clone ~ ~ ~ ~ ~1 ~ ~ 254 ~
-function bastionbuilder:internal/foundations/bridge/walls/wall_base_0/rot_0
-scoreboard players add current bastion.rng 3
-function bastionbuilder:internal/processors/bridge/walls/wall_base_0/processor_2/rot_0
-function bastionbuilder:internal/origins/bridge/walls/wall_base_0
-function bastionbuilder:internal/extensions/bridge/walls/wall_base_0/rot_0
-fill ~ 254 ~ ~ 255 ~ air

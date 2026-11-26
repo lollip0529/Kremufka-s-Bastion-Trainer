@@ -10,3 +10,4 @@ data remove storage kbt:savestate draft
 scoreboard players set #ss_bank kbt.settings 0
 scoreboard players set #ss_wait kbt.settings 0
 function kbt:savestate/reset_drops
+scoreboard players set #ss_max_e kbt.settings 256

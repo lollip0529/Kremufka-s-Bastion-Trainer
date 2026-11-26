@@ -1,9 +1,0 @@
-clone 998 192 1000 999 192 1000 1004 254 -1007 replace force
-setblock 998 192 1000 minecraft:air
-setblock 999 192 1000 minecraft:structure_block{mode:"SAVE",name:"kbt:runtime_savestate/a_42",posX:1,posY:0,posZ:0,sizeX:32,sizeY:32,sizeZ:32,ignoreEntities:0b,powered:0b,showboundingbox:0b,integrity:1.0f}
-execute if score #ss_action kbt.settings matches 1 run data merge block 999 192 1000 {mode:"LOAD"}
-setblock 998 192 1000 minecraft:redstone_block
-setblock 998 192 1000 minecraft:air
-clone 1004 254 -1007 1005 254 -1007 998 192 1000 replace force
-setblock 1004 254 -1007 minecraft:air
-setblock 1005 254 -1007 minecraft:air

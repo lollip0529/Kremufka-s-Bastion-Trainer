@@ -17,6 +17,7 @@ function kbt:savestate/labels
 scoreboard players set #ss_index kbt.settings 0
 scoreboard players set #ss_action kbt.settings 0
 execute as @e[type=!minecraft:player,x=936,y=128,z=936,dx=127,dy=127,dz=127] run function kbt:savestate/capture_entity
+scoreboard players operation #ss_max_e kbt.settings > #ss_index kbt.settings
 function kbt:savestate/rules_begin
 scoreboard players operation #ss_next kbt.settings = #ss_bank kbt.settings
 scoreboard players add #ss_next kbt.settings 1

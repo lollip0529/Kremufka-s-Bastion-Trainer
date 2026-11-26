@@ -5,6 +5,7 @@ execute as @e[type=!minecraft:player,x=936,y=128,z=936,dx=127,dy=127,dz=127] run
 execute if data storage kbt:savestate current{bank:0} run function kbt:savestate/tiles/a
 execute if data storage kbt:savestate current{bank:1} run function kbt:savestate/tiles/b
 function kbt:savestate/entities
+scoreboard players operation #ss_max_e kbt.settings > #ss_n kbt.settings
 function kbt:savestate/clear_restore_drops
 function kbt:savestate/rules_end
 function kbt:savestate/restore_runtime

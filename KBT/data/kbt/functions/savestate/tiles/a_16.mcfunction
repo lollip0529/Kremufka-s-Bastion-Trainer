@@ -1,9 +1,9 @@
-clone 934 160 936 935 160 936 1004 254 -1007 replace force
-setblock 934 160 936 minecraft:air
-setblock 935 160 936 minecraft:structure_block{mode:"SAVE",name:"kbt:runtime_savestate/a_16",posX:1,posY:0,posZ:0,sizeX:32,sizeY:32,sizeZ:32,ignoreEntities:0b,powered:0b,showboundingbox:0b,integrity:1.0f}
-execute if score #ss_action kbt.settings matches 1 run data merge block 935 160 936 {mode:"LOAD"}
-setblock 934 160 936 minecraft:redstone_block
-setblock 934 160 936 minecraft:air
-clone 1004 254 -1007 1005 254 -1007 934 160 936 replace force
+clone 982 176 1032 983 176 1032 1004 254 -1007 replace force
+setblock 982 176 1032 minecraft:air
+setblock 983 176 1032 minecraft:structure_block{mode:"SAVE",name:"kbt:runtime_savestate/a_16",posX:1,posY:0,posZ:0,sizeX:48,sizeY:48,sizeZ:32,ignoreEntities:0b,powered:0b,showboundingbox:0b,integrity:1.0f}
+execute if score #ss_action kbt.settings matches 1 run data merge block 983 176 1032 {mode:"LOAD"}
+setblock 982 176 1032 minecraft:redstone_block
+setblock 982 176 1032 minecraft:air
+clone 1004 254 -1007 1005 254 -1007 982 176 1032 replace force
 setblock 1004 254 -1007 minecraft:air
 setblock 1005 254 -1007 minecraft:air

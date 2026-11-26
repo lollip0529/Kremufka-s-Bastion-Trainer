@@ -6,6 +6,7 @@ execute positioned ~7 ~17 ~9 run function bastionbuilder:internal/place/mobs/pig
 execute positioned ~9 ~17 ~11 run function bastionbuilder:internal/place/mobs/piglin_melee
 execute positioned ~10 ~17 ~7 run function bastionbuilder:internal/place/mobs/piglin
 execute positioned ~4 ~19 ~11 run function bastionbuilder:internal/place/mobs/piglin_melee
+scoreboard players add current bastion.rng 3
 execute positioned ~7 ~17 ~7 run function bastionbuilder:internal/utils/chest_loot/mark_chest
 execute positioned ~7 ~17 ~8 run function bastionbuilder:internal/utils/chest_loot/mark_chest
 execute positioned ~7 ~17 ~11 run function bastionbuilder:internal/utils/chest_loot/mark_chest

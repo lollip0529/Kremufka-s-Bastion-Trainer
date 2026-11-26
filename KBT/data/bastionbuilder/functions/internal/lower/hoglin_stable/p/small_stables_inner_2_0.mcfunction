@@ -1,6 +1,3 @@
+execute if score #bb_inplace kbt.settings matches 1 run function bastionbuilder:internal/lower/hoglin_stable/pa/small_stables_inner_2_0
 setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"NONE",name:"bastionbuilder:lower/hoglin_stable/small_stables_inner_2"}
 setblock ~ ~1 ~ redstone_block
-execute positioned ~4 ~1 ~2 run function bastionbuilder:internal/place/mobs/piglin
-execute positioned ~6 ~1 ~4 run function bastionbuilder:internal/place/mobs/piglin_melee
-execute positioned ~7 ~1 ~2 run function bastionbuilder:internal/place/mobs/hoglin
-execute positioned ~3 ~1 ~6 run function bastionbuilder:internal/utils/chest_loot/mark_chest

@@ -1,13 +1,13 @@
-execute if score #run_floor kbt.settings matches 2 positioned ~ ~ ~-16 run function bastionbuilder:internal/lower/bridge/buried_core_lo
+execute if score #run_floor kbt.settings matches 2 unless score #bb_buried_same kbt.settings matches 1 positioned ~ ~ ~-16 run function bastionbuilder:internal/lower/bridge/buried_core_lo
 setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"NONE",posX:0,posY:0,posZ:-16,name:"bastionbuilder:lower/bridge/core_lo"}
 setblock ~ ~1 ~ redstone_block
-execute if score #run_floor kbt.settings matches 2 positioned ~-5 ~32 ~ run function bastionbuilder:internal/lower/bridge/buried_core_hi
+execute if score #run_floor kbt.settings matches 2 unless score #bb_buried_same kbt.settings matches 1 positioned ~-5 ~32 ~ run function bastionbuilder:internal/lower/bridge/buried_core_hi
 setblock ~-5 ~42 ~8 structure_block{mode:"LOAD",rotation:"NONE",posX:0,posY:-10,posZ:-8,name:"bastionbuilder:lower/bridge/core_hi"}
 setblock ~-5 ~43 ~8 redstone_block
-execute if score #run_floor kbt.settings matches 2 positioned ~2 ~ ~32 run function bastionbuilder:internal/lower/bridge/buried_wall_base_1
+execute if score #run_floor kbt.settings matches 2 unless score #bb_buried_same kbt.settings matches 1 positioned ~2 ~ ~32 run function bastionbuilder:internal/lower/bridge/buried_wall_base_1
 setblock ~2 ~ ~32 structure_block{mode:"LOAD",rotation:"NONE",name:"bastionbuilder:lower/bridge/wall_base_1"}
 setblock ~2 ~1 ~32 redstone_block
-execute if score #run_floor kbt.settings matches 2 positioned ~-31 ~21 ~7 run function bastionbuilder:internal/lower/bridge/buried_bridge
+execute if score #run_floor kbt.settings matches 2 unless score #bb_buried_same kbt.settings matches 1 positioned ~-31 ~21 ~7 run function bastionbuilder:internal/lower/bridge/buried_bridge
 setblock ~-31 ~24 ~14 structure_block{mode:"LOAD",rotation:"NONE",posX:0,posY:-3,posZ:-7,name:"bastionbuilder:lower/bridge/bridge"}
 setblock ~-31 ~25 ~14 redstone_block
 scoreboard players add current bastion.rng 2

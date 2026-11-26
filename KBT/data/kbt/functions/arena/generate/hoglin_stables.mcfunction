@@ -13,6 +13,7 @@ scoreboard players set bastion_rotation bastion.temp 1
 function kbt:share/recipe/capture
 execute in the_nether positioned 1000 130 1000 run function bastionbuilder:generate
 scoreboard players set #bb_inplace kbt.settings 0
+scoreboard players set #bb_buried_same kbt.settings 0
 execute in minecraft:the_nether run function kbt:arena/seed_chests
 execute in minecraft:the_nether run function kbt:arena/floor
 execute in minecraft:the_nether run function kbt:debug/initialize

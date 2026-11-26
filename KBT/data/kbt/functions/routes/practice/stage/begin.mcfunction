@@ -9,6 +9,7 @@ data modify storage kbt:route_practice current_stage set from storage kbt:route_
 data remove storage kbt:route_practice stages[0]
 data modify storage kbt:route_practice build_queue set from storage kbt:route_practice current_stage.elements
 execute if data storage kbt:route_practice build_queue[0] run function kbt:routes/practice/stage/build
+execute if entity @e[type=minecraft:armor_stand,tag=kbt.rp_marker,scores={kbt.rp_type=21}] run function kbt:routes/practice/gold/init
 execute unless data storage kbt:route_practice stages[0] run data modify storage kbt:route_practice element set from storage kbt:route_practice route.finish
 execute unless data storage kbt:route_practice stages[0] run function kbt:routes/practice/marker/spawn
 execute unless score #rp_stage_valid kbt.settings matches 1 run function kbt:routes/practice/stage/fail

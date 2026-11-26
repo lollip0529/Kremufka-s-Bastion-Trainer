@@ -31,3 +31,5 @@ execute if score #t_spawner kbt.settings matches 1 run scoreboard players set tr
 execute unless score #h_left kbt.settings matches 0..3 run scoreboard players set #h_left kbt.settings 3
 scoreboard players operation units_left_rampart bastion.settings = #h_left kbt.settings
 execute if score #h_left kbt.settings matches 3 run scoreboard players set units_left_rampart bastion.settings -1
+execute unless score #bridge_lava kbt.settings matches 0..1 run scoreboard players set #bridge_lava kbt.settings 0
+scoreboard players operation bridge_lava_fix bastion.settings = #bridge_lava kbt.settings

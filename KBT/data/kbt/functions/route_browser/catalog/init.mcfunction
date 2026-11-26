@@ -5,5 +5,7 @@ scoreboard players set #rb_dirty kbt.settings 1
 scoreboard objectives add kbt.rb_rowid dummy
 scoreboard objectives add kbt.rb_pick trigger
 scoreboard objectives add kbt.rb_page trigger
+function kbt:route_browser/catalog/favorites/init
+advancement revoke @a only kbt:route_browser/more_routes_click
 scoreboard players set #rb_lobby_rev kbt.settings 0
 scoreboard players set #rb_building kbt.settings 0

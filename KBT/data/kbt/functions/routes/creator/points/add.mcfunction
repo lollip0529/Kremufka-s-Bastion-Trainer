@@ -15,10 +15,12 @@ execute if score #rc_tool kbt.settings matches 2..4 run function kbt:routes/crea
 execute if score #rc_tool kbt.settings matches 10..11 run function kbt:routes/creator/ray/start
 execute if score #rc_tool kbt.settings matches 6 run function kbt:routes/creator/ray/start
 execute if score #rc_tool kbt.settings matches 8 run function kbt:routes/creator/ray/start
+execute if score #rc_tool kbt.settings matches 21 run function kbt:routes/creator/ray/start
 execute if score #rc_tool kbt.settings matches 14 run data modify storage kbt:route_runtime element.type set value 5
 execute if score #rc_tool kbt.settings matches 14 run data modify storage kbt:route_runtime element.regenerate set value 1b
 execute if score #rc_tool kbt.settings matches 14 run scoreboard players set #rc_tool kbt.settings 5
-execute if score #rc_valid kbt.settings matches 1 unless score #rc_tool kbt.settings matches 8 unless score #rc_tool kbt.settings matches 12..13 unless score #rc_tool kbt.settings matches 15 unless score #rc_tool kbt.settings matches 17 run function kbt:routes/creator/points/commit
+execute if score #rc_valid kbt.settings matches 1 unless score #rc_tool kbt.settings matches 8 unless score #rc_tool kbt.settings matches 12..13 unless score #rc_tool kbt.settings matches 15 unless score #rc_tool kbt.settings matches 17 unless score #rc_tool kbt.settings matches 21 run function kbt:routes/creator/points/commit
+execute if score #rc_valid kbt.settings matches 1 if score #rc_tool kbt.settings matches 21 run function kbt:routes/creator/gold/add
 execute if score #rc_valid kbt.settings matches 1 if score #rc_tool kbt.settings matches 13 run function kbt:routes/creator/head/begin
 execute if score #rc_valid kbt.settings matches 1 if score #rc_tool kbt.settings matches 15 run function kbt:routes/creator/region/begin
 execute if score #rc_valid kbt.settings matches 1 if score #rc_tool kbt.settings matches 17 run function kbt:routes/creator/hoglin_region/begin

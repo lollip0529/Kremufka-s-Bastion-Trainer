@@ -9,8 +9,6 @@ scoreboard players set @s kbt.rp_mode 0
 gamemode spectator @s
 data modify storage kbt:route_practice candidate set from storage kbt:route_practice route
 data modify storage kbt:route_practice job_record set from storage kbt:route_practice route
-data remove storage kbt:share arena
-execute if data storage kbt:route_practice job_record.recipe run data modify storage kbt:share arena set from storage kbt:route_practice job_record.recipe
 execute store result score #rp_id kbt.settings run data get storage kbt:route_practice route.id
 scoreboard players set #rp_job kbt.settings 2
 scoreboard players set #rp_fast_job kbt.settings 0
@@ -23,3 +21,6 @@ function kbt:routes/practice/job/select_bank
 execute unless data storage kbt:route_practice route.layout{mode:"builtin"} run function kbt:routes/practice/job/position
 execute in minecraft:the_nether run forceload add 936 936 1063 1063
 execute in minecraft:the_nether run function kbt:routes/practice/job/fast_clear
+scoreboard players set #rp_hud_clock kbt.settings 3
+scoreboard players set #rp_hud_seen_phase kbt.settings -1
+function kbt:routes/practice/job/progress/tick

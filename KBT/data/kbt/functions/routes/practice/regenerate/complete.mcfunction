@@ -12,11 +12,16 @@ gamemode survival @s
 execute in minecraft:the_nether at @s run function kbt:practice/extinguish
 effect give @s minecraft:instant_health 1 10 true
 function kbt:loadout/apply
+function kbt:arena/drop_cleanup/begin
 function kbt:practice/clear_drops
 tag @s add kbt.rp_runner
 scoreboard players set #rp_active kbt.settings 1
 scoreboard players set #arena_ready kbt.settings 1
 execute unless score #rp_phase kbt.settings matches 1.. run scoreboard players set #rp_phase kbt.settings 1
-scoreboard players add #rp_phase kbt.settings 1
+execute unless data storage kbt:route_practice phase_retry run scoreboard players add #rp_phase kbt.settings 1
+execute if data storage kbt:route_practice phase_retry run function kbt:routes/practice/phase/restore
+function kbt:routes/practice/phase/capture
 function kbt:routes/practice/stage/advance
-execute if score #rp_active kbt.settings matches 1 run function kbt:routes/practice/regenerate/rearm
+execute if score #rp_active kbt.settings matches 1 unless data storage kbt:route_practice phase_retry run function kbt:routes/practice/regenerate/rearm
+execute if score #rp_active kbt.settings matches 1 if data storage kbt:route_practice phase_retry run function kbt:routes/practice/phase/arm
+data remove storage kbt:route_practice phase_retry

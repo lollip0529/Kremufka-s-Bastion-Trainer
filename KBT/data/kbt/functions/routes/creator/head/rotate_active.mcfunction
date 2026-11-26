@@ -1,3 +1,4 @@
+function kbt:routes/creator/head/normalize_rotation
 scoreboard players set #rc_head_turn kbt.settings 0
 execute if score @s kbt.rc_menu matches 110 run scoreboard players set #rc_head_turn kbt.settings 1800000
 execute if score @s kbt.rc_menu matches 111 run scoreboard players set #rc_head_turn kbt.settings 900000

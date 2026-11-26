@@ -1,18 +1,4 @@
-scoreboard players set #gp_replay kbt.settings 0
-scoreboard players set #gp_completed kbt.settings 0
-execute if score @s kbt.gp_timer matches 2 if score @s kbt.run matches 2 if entity @s[gamemode=survival,nbt={Dimension:"minecraft:the_nether"},nbt=!{Health:0.0f}] run scoreboard players set #gp_completed kbt.settings 1
-function kbt:practice/timer/abort
-function kbt:routes/setup/cancel_generation
-function kbt:routes/practice/stop
-execute if score @s kbt.creator matches 1 run function kbt:routes/creator/exit
-schedule clear kbt:practice/generate
-schedule clear kbt:arena/generate_selected
-tag @a remove kbt.start_player
-scoreboard players set @s kbt.run 0
-function kbt:practice/clear_drops
-gamemode adventure @s
-clear @s
-execute in minecraft:the_nether run tp @s 21 129 29 0 0
-execute in minecraft:the_nether run function kbt:arena/reset
+function kbt:practice/reset_player
+execute in minecraft:the_nether run function kbt:arena/idle
 execute in minecraft:the_nether at @s run function kbt:practice/extinguish
 execute if score #gp_completed kbt.settings matches 1 run function kbt:practice/timer/result

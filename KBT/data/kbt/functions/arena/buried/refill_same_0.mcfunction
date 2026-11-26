@@ -1,0 +1,11 @@
+fill 1002 154 984 1007 185 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1002 154 992 1007 185 999 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 154 984 1019 185 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 154 992 1019 185 999 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1002 154 1032 1007 185 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1002 154 1040 1007 185 1047 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 154 1032 1019 185 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 154 1040 1019 185 1047 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 975 129 1014 975 150 1016 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 129 1014 977 150 1016 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 993 129 1014 995 150 1016 minecraft:netherrack replace #kbt:arena/not_netherrack

@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:lava",
+    "minecraft:fire",
+    "minecraft:soul_fire",
+    "minecraft:slime_block",
+    "minecraft:piston_head",
+    "minecraft:piston",
+    "minecraft:sticky_piston",
+    "minecraft:moving_piston",
+    "minecraft:chest",
+    "minecraft:spawner"
+  ]
+}

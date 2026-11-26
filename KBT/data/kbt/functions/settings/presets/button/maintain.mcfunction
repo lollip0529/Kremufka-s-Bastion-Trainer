@@ -1,0 +1,4 @@
+execute if entity @a[distance=..32] if block ~ ~ ~ minecraft:chest[type=single] if entity @e[type=minecraft:armor_stand,tag=kbt.settings_chest,distance=..0.1] unless entity @e[type=minecraft:armor_stand,tag=kbt.gp_presets_button,distance=..3] run function kbt:settings/presets/button/create
+execute if entity @a[distance=..32] if block ~ ~ ~ minecraft:chest[type=single] if entity @e[type=minecraft:armor_stand,tag=kbt.settings_chest,distance=..0.1] unless entity @e[type=minecraft:pufferfish,tag=kbt.gp_presets_hitbox,distance=..3] run function kbt:settings/presets/button/create
+execute unless block ~ ~ ~ minecraft:chest[type=single] run function kbt:settings/presets/button/clear
+execute unless entity @e[type=minecraft:armor_stand,tag=kbt.settings_chest,distance=..0.1] run function kbt:settings/presets/button/clear

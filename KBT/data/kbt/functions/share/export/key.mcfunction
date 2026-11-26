@@ -6,5 +6,8 @@ data modify storage kbt:route_runtime write_record.share set from storage kbt:sh
 scoreboard players set #rc_catalog_op kbt.settings 1
 function kbt:routes/creator/catalog/scan_begin
 execute if score #rc_protected kbt.settings matches 0 if data storage kbt:route_runtime found run data modify storage kbt:routes records set from storage kbt:route_runtime catalog_result
+scoreboard players set #sh_draft kbt.settings 0
 execute store result score #sh_draft kbt.settings run data get storage kbt:routes draft.id
 execute if score #sh_draft kbt.settings = #rc_target kbt.settings run data modify storage kbt:routes draft.share set from storage kbt:share payload.record.share
+execute if score #sh_draft kbt.settings = #rc_target kbt.settings if data storage kbt:routes editor.history[0] run data modify storage kbt:routes editor.history[].share set from storage kbt:share payload.record.share
+execute if score #sh_draft kbt.settings = #rc_target kbt.settings if data storage kbt:routes editor.redo[0] run data modify storage kbt:routes editor.redo[].share set from storage kbt:share payload.record.share

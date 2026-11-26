@@ -8,6 +8,7 @@ execute store result storage kbt:general_practice settings.bridge_left int 1 run
 execute store result storage kbt:general_practice settings.bridge_right int 1 run scoreboard players get #bridge_right kbt.settings
 execute store result storage kbt:general_practice settings.h_left int 1 run scoreboard players get #h_left kbt.settings
 execute store result storage kbt:general_practice settings.s_left_gap int 1 run scoreboard players get #s_left_gap kbt.settings
+execute store result storage kbt:general_practice settings.s_good_gap int 1 run scoreboard players get #s_good_gap kbt.settings
 execute store result storage kbt:general_practice settings.s_right_gap int 1 run scoreboard players get #s_right_gap kbt.settings
 execute store result storage kbt:general_practice settings.s_left_ramp int 1 run scoreboard players get #s_left_ramp kbt.settings
 execute store result storage kbt:general_practice settings.s_mid_ramp int 1 run scoreboard players get #s_mid_ramp kbt.settings
@@ -18,3 +19,12 @@ execute store result storage kbt:general_practice settings.bridge_spawn int 1 ru
 execute store result storage kbt:general_practice settings.treasure_spawn int 1 run scoreboard players get #treasure_spawn kbt.settings
 execute store result storage kbt:general_practice settings.housing_spawn int 1 run scoreboard players get #housing_spawn kbt.settings
 execute store result storage kbt:general_practice settings.stables_spawn int 1 run scoreboard players get #stables_spawn kbt.settings
+execute store result storage kbt:general_practice settings.s_triple_chest int 1 run scoreboard players get #s_triple_chest kbt.settings
+execute store result storage kbt:general_practice settings.s_lantern_chest int 1 run scoreboard players get #s_lantern_chest kbt.settings
+execute store result storage kbt:general_practice settings.s_single_chest int 1 run scoreboard players get #s_single_chest kbt.settings
+execute store result storage kbt:general_practice settings.s_bad_gap int 1 run scoreboard players get #s_bad_gap kbt.settings
+execute store result storage kbt:general_practice settings.custom_bridge int 1 run scoreboard players get #cs_b0 kbt.settings
+execute store result storage kbt:general_practice settings.custom_treasure int 1 run scoreboard players get #cs_b1 kbt.settings
+execute store result storage kbt:general_practice settings.custom_housing int 1 run scoreboard players get #cs_b2 kbt.settings
+execute store result storage kbt:general_practice settings.custom_stables int 1 run scoreboard players get #cs_b3 kbt.settings
+execute store result storage kbt:general_practice settings.bridge_lava int 1 run scoreboard players get #bridge_lava kbt.settings

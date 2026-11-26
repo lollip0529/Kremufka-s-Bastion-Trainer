@@ -1,0 +1,2 @@
+execute if score #it_ui_code kbt.settings matches 505..630 run function kbt:debug/info/view/values/gold/n100
+execute if score #it_ui_code kbt.settings matches 631..756 run function kbt:debug/info/view/values/gold/n101

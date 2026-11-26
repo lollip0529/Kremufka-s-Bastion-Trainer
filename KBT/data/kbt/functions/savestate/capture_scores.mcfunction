@@ -1,0 +1,46 @@
+data modify storage kbt:savestate player set value {}
+execute if score @s kbt.run = @s kbt.run store result storage kbt:savestate player.scores.kbt_run int 1 run scoreboard players get @s kbt.run
+execute if score @s kbt.gp_timer = @s kbt.gp_timer store result storage kbt:savestate player.scores.kbt_gp_timer int 1 run scoreboard players get @s kbt.gp_timer
+execute if score @s kbt.gp_time = @s kbt.gp_time store result storage kbt:savestate player.scores.kbt_gp_time int 1 run scoreboard players get @s kbt.gp_time
+execute if score @s kbt.gp_hud = @s kbt.gp_hud store result storage kbt:savestate player.scores.kbt_gp_hud int 1 run scoreboard players get @s kbt.gp_hud
+execute if score @s kbt.blocks = @s kbt.blocks store result storage kbt:savestate player.scores.kbt_blocks int 1 run scoreboard players get @s kbt.blocks
+execute if score @s kbt.damage = @s kbt.damage store result storage kbt:savestate player.scores.kbt_damage int 1 run scoreboard players get @s kbt.damage
+execute if score @s kbt.start_x = @s kbt.start_x store result storage kbt:savestate player.scores.kbt_start_x int 1 run scoreboard players get @s kbt.start_x
+execute if score @s kbt.start_z = @s kbt.start_z store result storage kbt:savestate player.scores.kbt_start_z int 1 run scoreboard players get @s kbt.start_z
+execute if score @s kbt.jump = @s kbt.jump store result storage kbt:savestate player.scores.kbt_jump int 1 run scoreboard players get @s kbt.jump
+execute if score @s kbt.climb = @s kbt.climb store result storage kbt:savestate player.scores.kbt_climb int 1 run scoreboard players get @s kbt.climb
+execute if score #rp_active kbt.settings = #rp_active kbt.settings store result storage kbt:savestate draft.scores.rp_active int 1 run scoreboard players get #rp_active kbt.settings
+execute if score #rp_stage kbt.settings = #rp_stage kbt.settings store result storage kbt:savestate draft.scores.rp_stage int 1 run scoreboard players get #rp_stage kbt.settings
+execute if score #rp_phase kbt.settings = #rp_phase kbt.settings store result storage kbt:savestate draft.scores.rp_phase int 1 run scoreboard players get #rp_phase kbt.settings
+execute if score #rp_phase_total kbt.settings = #rp_phase_total kbt.settings store result storage kbt:savestate draft.scores.rp_phase_total int 1 run scoreboard players get #rp_phase_total kbt.settings
+execute if score #rp_remaining kbt.settings = #rp_remaining kbt.settings store result storage kbt:savestate draft.scores.rp_remaining int 1 run scoreboard players get #rp_remaining kbt.settings
+execute if score #rp_message_id kbt.settings = #rp_message_id kbt.settings store result storage kbt:savestate draft.scores.rp_message_id int 1 run scoreboard players get #rp_message_id kbt.settings
+execute if score #rp_message_group kbt.settings = #rp_message_group kbt.settings store result storage kbt:savestate draft.scores.rp_message_group int 1 run scoreboard players get #rp_message_group kbt.settings
+execute if score #rp_gold_group kbt.settings = #rp_gold_group kbt.settings store result storage kbt:savestate draft.scores.rp_gold_group int 1 run scoreboard players get #rp_gold_group kbt.settings
+execute if score #rp_particle kbt.settings = #rp_particle kbt.settings store result storage kbt:savestate draft.scores.rp_particle int 1 run scoreboard players get #rp_particle kbt.settings
+execute if score #rp_mob_policy kbt.settings = #rp_mob_policy kbt.settings store result storage kbt:savestate draft.scores.rp_mob_policy int 1 run scoreboard players get #rp_mob_policy kbt.settings
+execute if score #rp_run_mode kbt.settings = #rp_run_mode kbt.settings store result storage kbt:savestate draft.scores.rp_run_mode int 1 run scoreboard players get #rp_run_mode kbt.settings
+execute if score #rp_run_piglins kbt.settings = #rp_run_piglins kbt.settings store result storage kbt:savestate draft.scores.rp_run_piglins int 1 run scoreboard players get #rp_run_piglins kbt.settings
+execute if score #rp_run_hoglins kbt.settings = #rp_run_hoglins kbt.settings store result storage kbt:savestate draft.scores.rp_run_hoglins int 1 run scoreboard players get #rp_run_hoglins kbt.settings
+execute if score #rp_piglin_toggled kbt.settings = #rp_piglin_toggled kbt.settings store result storage kbt:savestate draft.scores.rp_piglin_toggled int 1 run scoreboard players get #rp_piglin_toggled kbt.settings
+execute if score #rp_piglin_enabled kbt.settings = #rp_piglin_enabled kbt.settings store result storage kbt:savestate draft.scores.rp_piglin_enabled int 1 run scoreboard players get #rp_piglin_enabled kbt.settings
+execute if score #rp_hoglin_toggled kbt.settings = #rp_hoglin_toggled kbt.settings store result storage kbt:savestate draft.scores.rp_hoglin_toggled int 1 run scoreboard players get #rp_hoglin_toggled kbt.settings
+execute if score #rp_hoglin_enabled kbt.settings = #rp_hoglin_enabled kbt.settings store result storage kbt:savestate draft.scores.rp_hoglin_enabled int 1 run scoreboard players get #rp_hoglin_enabled kbt.settings
+execute if score #rt_state kbt.settings = #rt_state kbt.settings store result storage kbt:savestate draft.scores.rt_state int 1 run scoreboard players get #rt_state kbt.settings
+execute if score #rt_ticks kbt.settings = #rt_ticks kbt.settings store result storage kbt:savestate draft.scores.rt_ticks int 1 run scoreboard players get #rt_ticks kbt.settings
+execute if score #rt_eligible kbt.settings = #rt_eligible kbt.settings store result storage kbt:savestate draft.scores.rt_eligible int 1 run scoreboard players get #rt_eligible kbt.settings
+execute if score #rt_route_id kbt.settings = #rt_route_id kbt.settings store result storage kbt:savestate draft.scores.rt_route_id int 1 run scoreboard players get #rt_route_id kbt.settings
+execute if score #ph_ticks kbt.settings = #ph_ticks kbt.settings store result storage kbt:savestate draft.scores.ph_ticks int 1 run scoreboard players get #ph_ticks kbt.settings
+execute if score #ph_enabled kbt.settings = #ph_enabled kbt.settings store result storage kbt:savestate draft.scores.ph_enabled int 1 run scoreboard players get #ph_enabled kbt.settings
+execute if score #ph_valid kbt.settings = #ph_valid kbt.settings store result storage kbt:savestate draft.scores.ph_valid int 1 run scoreboard players get #ph_valid kbt.settings
+execute if score #ph_recorded kbt.settings = #ph_recorded kbt.settings store result storage kbt:savestate draft.scores.ph_recorded int 1 run scoreboard players get #ph_recorded kbt.settings
+execute if score #ph_loop kbt.settings = #ph_loop kbt.settings store result storage kbt:savestate draft.scores.ph_loop int 1 run scoreboard players get #ph_loop kbt.settings
+execute if score #it_gold kbt.settings = #it_gold kbt.settings store result storage kbt:savestate draft.scores.it_gold int 1 run scoreboard players get #it_gold kbt.settings
+execute if score #it_blocks kbt.settings = #it_blocks kbt.settings store result storage kbt:savestate draft.scores.it_blocks int 1 run scoreboard players get #it_blocks kbt.settings
+execute if score #it_damage kbt.settings = #it_damage kbt.settings store result storage kbt:savestate draft.scores.it_damage int 1 run scoreboard players get #it_damage kbt.settings
+execute if score #it_phase kbt.settings = #it_phase kbt.settings store result storage kbt:savestate draft.scores.it_phase int 1 run scoreboard players get #it_phase kbt.settings
+execute if score #it_stage kbt.settings = #it_stage kbt.settings store result storage kbt:savestate draft.scores.it_stage int 1 run scoreboard players get #it_stage kbt.settings
+execute if score #mv_total kbt.settings = #mv_total kbt.settings store result storage kbt:savestate draft.scores.mv_total int 1 run scoreboard players get #mv_total kbt.settings
+execute if score #mv_clock_started kbt.settings = #mv_clock_started kbt.settings store result storage kbt:savestate draft.scores.mv_clock_started int 1 run scoreboard players get #mv_clock_started kbt.settings
+data modify storage kbt:savestate draft.player set from storage kbt:savestate player
+data remove storage kbt:savestate player

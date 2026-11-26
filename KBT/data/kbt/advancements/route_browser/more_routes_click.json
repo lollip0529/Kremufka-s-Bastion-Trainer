@@ -1,0 +1,14 @@
+{
+  "criteria": {
+    "hit": {
+      "trigger": "minecraft:player_hurt_entity",
+      "conditions": {
+        "entity": {
+          "type": "minecraft:pufferfish",
+          "nbt": "{Tags:[\"kbt.rb_more_hitbox\"]}"
+        }
+      }
+    }
+  },
+  "rewards": {"function": "kbt:route_browser/catalog/more_routes/hit"}
+}

@@ -22,6 +22,10 @@ execute if score @s kbt.rc_setup matches 28 if score #bastion kbt.settings match
 execute if score #t_center kbt.settings matches 5.. run scoreboard players set #t_center kbt.settings 0
 execute if score @s kbt.rc_setup matches 29 if score #bastion kbt.settings matches 1 run scoreboard players add #t_spawner kbt.settings 1
 execute if score #t_spawner kbt.settings matches 2.. run scoreboard players set #t_spawner kbt.settings 0
+execute if score @s kbt.rc_setup matches 30 run scoreboard players add #floor kbt.settings 1
+execute if score #floor kbt.settings matches 4.. run scoreboard players set #floor kbt.settings 0
+execute if score @s kbt.rc_setup matches 31 if score #bastion kbt.settings matches 0 run scoreboard players add #bridge_lava kbt.settings 1
+execute if score #bridge_lava kbt.settings matches 2.. run scoreboard players set #bridge_lava kbt.settings 0
 execute if score @s kbt.rc_setup matches 90 run function kbt:routes/setup/prepare
 execute if score @s kbt.rc_setup matches 91 run scoreboard players set @s kbt.rc_wiz 0
 execute if score @s kbt.rc_setup matches 91 run tellraw @s {"text":"Route setup closed. Arena and draft were not replaced.","color":"gray"}

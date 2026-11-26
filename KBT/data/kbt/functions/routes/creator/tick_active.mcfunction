@@ -1,10 +1,18 @@
-execute as @a[scores={kbt.creator=1},nbt={Health:0.0f}] run function kbt:routes/creator/exit_active
-execute as @a[scores={kbt.creator=1},nbt={Dimension:"minecraft:the_nether"},nbt=!{Health:0.0f}] at @s run function kbt:routes/creator/preview/tick
-execute as @a[scores={kbt.creator=1},nbt={Dimension:"minecraft:the_nether"},nbt=!{Health:0.0f}] at @s run function kbt:routes/creator/text/tick
+execute as @a[scores={kbt.creator=1,kbt.rc_edit=1..}] run function kbt:routes/creator/edit/input
+execute as @a[scores={kbt.creator=1,kbt.rc_move=1..}] at @s run function kbt:routes/creator/move/input
+execute as @a[scores={kbt.creator=1,kbt.rc_menu=135}] run function kbt:routes/creator/move/select
+execute as @a[scores={kbt.creator=1,kbt.rc_menu=136}] unless data storage kbt:routes draft{mode:"movement"} run function kbt:routes/creator/gold/select
+execute as @a[scores={kbt.creator=1,kbt.rc_menu=137}] at @s run function kbt:routes/creator/layout_check/open
+execute as @a[scores={kbt.creator=1,kbt.rc_menu=133}] at @s run function kbt:routes/creator/generation/open
+execute as @a[scores={kbt.creator=1,kbt.rc_menu=134}] run function kbt:routes/creator/phase_copy/start
+execute as @a[scores={kbt.creator=1,kbt.rc_gen=1..}] at @s run function kbt:routes/creator/generation/actions
+execute as @a[scores={kbt.creator=1,kbt.hp=0}] run function kbt:routes/creator/exit_active
+execute as @a[scores={kbt.creator=1,kbt.hp=1..},nbt={Dimension:"minecraft:the_nether"}] at @s run function kbt:routes/creator/preview/tick
+execute as @a[scores={kbt.creator=1,kbt.hp=1..},nbt={Dimension:"minecraft:the_nether"}] at @s run function kbt:routes/creator/text/tick
 scoreboard players remove @a[scores={kbt.creator=1,kbt.rc_cd=1..}] kbt.rc_cd 1
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=1..7}] run function kbt:routes/creator/select_tool
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=40..41}] run function kbt:routes/creator/select_tool
-execute as @a[scores={kbt.creator=1,kbt.rc_menu=43..48}] run function kbt:routes/creator/select_tool
+execute as @a[scores={kbt.creator=1,kbt.rc_menu=43..49}] run function kbt:routes/creator/select_tool
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=90}] run function kbt:routes/creator/head/book
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=91}] run function kbt:routes/creator/head/apply
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=92}] run function kbt:routes/creator/head/copy
@@ -12,6 +20,7 @@ execute as @a[scores={kbt.creator=1,kbt.rc_menu=93}] run function kbt:routes/cre
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=95}] run function kbt:routes/creator/head/texture_book
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=96}] run function kbt:routes/creator/head/apply
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=110..117}] run function kbt:routes/creator/head/rotate
+execute as @a[scores={kbt.creator=1,kbt.rc_head=1..10}] run function kbt:routes/creator/head/tilt
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=97}] run function kbt:routes/creator/region/add_point
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=97}] run function kbt:routes/creator/hoglin_region/add_point
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=98}] run function kbt:routes/creator/region/remove_point
@@ -23,6 +32,7 @@ execute as @a[scores={kbt.creator=1,kbt.rc_menu=100..101}] run function kbt:rout
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=42}] run function kbt:routes/creator/message/select
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=62}] run function kbt:routes/creator/message/add_point
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=63}] run function kbt:routes/creator/message/remove_point
+execute as @a[scores={kbt.creator=1,kbt.rc_menu=138}] run function kbt:routes/creator/message/toggle_activation
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=8}] run function kbt:routes/creator/menu
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=120}] unless data storage kbt:routes draft{mode:"movement"} run function kbt:routes/creator/menu/settings
 execute as @a[scores={kbt.creator=1,kbt.rc_menu=121}] unless data storage kbt:routes draft{mode:"movement"} run function kbt:routes/creator/menu/stages

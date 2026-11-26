@@ -1,64 +1,324 @@
-fill 936 128 936 951 255 951 minecraft:netherrack
-fill 936 128 952 951 255 967 minecraft:netherrack
-fill 936 128 968 951 255 983 minecraft:netherrack
-fill 936 128 984 951 255 999 minecraft:netherrack
-fill 936 128 1000 951 255 1015 minecraft:netherrack
-fill 936 128 1016 951 255 1031 minecraft:netherrack
-fill 936 128 1032 951 255 1047 minecraft:netherrack
-fill 936 128 1048 951 255 1063 minecraft:netherrack
-fill 952 128 936 967 255 951 minecraft:netherrack
-fill 952 128 952 967 255 967 minecraft:netherrack
-fill 952 128 968 967 255 983 minecraft:netherrack
-fill 952 128 984 967 255 999 minecraft:netherrack
-fill 952 128 1000 967 255 1015 minecraft:netherrack
-fill 952 128 1016 967 255 1031 minecraft:netherrack
-fill 952 128 1032 967 255 1047 minecraft:netherrack
-fill 952 128 1048 967 255 1063 minecraft:netherrack
-fill 968 128 936 983 255 951 minecraft:netherrack
-fill 968 128 952 983 255 967 minecraft:netherrack
-fill 968 128 968 983 255 983 minecraft:netherrack
-fill 968 128 984 983 255 999 minecraft:netherrack
-fill 968 128 1000 983 255 1015 minecraft:netherrack
-fill 968 128 1016 983 255 1031 minecraft:netherrack
-fill 968 128 1032 983 255 1047 minecraft:netherrack
-fill 968 128 1048 983 255 1063 minecraft:netherrack
-fill 984 128 936 999 255 951 minecraft:netherrack
-fill 984 128 952 999 255 967 minecraft:netherrack
-fill 984 128 968 999 255 983 minecraft:netherrack
-fill 984 128 984 999 255 999 minecraft:netherrack
-fill 984 128 1000 999 255 1015 minecraft:netherrack
-fill 984 128 1016 999 255 1031 minecraft:netherrack
-fill 984 128 1032 999 255 1047 minecraft:netherrack
-fill 984 128 1048 999 255 1063 minecraft:netherrack
-fill 1000 128 936 1015 255 951 minecraft:netherrack
-fill 1000 128 952 1015 255 967 minecraft:netherrack
-fill 1000 128 968 1015 255 983 minecraft:netherrack
-fill 1000 128 984 1015 255 999 minecraft:netherrack
-fill 1000 128 1000 1015 255 1015 minecraft:netherrack
-fill 1000 128 1016 1015 255 1031 minecraft:netherrack
-fill 1000 128 1032 1015 255 1047 minecraft:netherrack
-fill 1000 128 1048 1015 255 1063 minecraft:netherrack
-fill 1016 128 936 1031 255 951 minecraft:netherrack
-fill 1016 128 952 1031 255 967 minecraft:netherrack
-fill 1016 128 968 1031 255 983 minecraft:netherrack
-fill 1016 128 984 1031 255 999 minecraft:netherrack
-fill 1016 128 1000 1031 255 1015 minecraft:netherrack
-fill 1016 128 1016 1031 255 1031 minecraft:netherrack
-fill 1016 128 1032 1031 255 1047 minecraft:netherrack
-fill 1016 128 1048 1031 255 1063 minecraft:netherrack
-fill 1032 128 936 1047 255 951 minecraft:netherrack
-fill 1032 128 952 1047 255 967 minecraft:netherrack
-fill 1032 128 968 1047 255 983 minecraft:netherrack
-fill 1032 128 984 1047 255 999 minecraft:netherrack
-fill 1032 128 1000 1047 255 1015 minecraft:netherrack
-fill 1032 128 1016 1047 255 1031 minecraft:netherrack
-fill 1032 128 1032 1047 255 1047 minecraft:netherrack
-fill 1032 128 1048 1047 255 1063 minecraft:netherrack
-fill 1048 128 936 1063 255 951 minecraft:netherrack
-fill 1048 128 952 1063 255 967 minecraft:netherrack
-fill 1048 128 968 1063 255 983 minecraft:netherrack
-fill 1048 128 984 1063 255 999 minecraft:netherrack
-fill 1048 128 1000 1063 255 1015 minecraft:netherrack
-fill 1048 128 1016 1063 255 1031 minecraft:netherrack
-fill 1048 128 1032 1063 255 1047 minecraft:netherrack
-fill 1048 128 1048 1063 255 1063 minecraft:netherrack
+fill 936 224 936 943 255 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 192 936 943 223 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 160 936 943 191 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 128 936 943 159 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 224 944 943 255 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 192 944 943 223 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 160 944 943 191 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 128 944 943 159 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 224 960 943 255 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 192 960 943 223 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 160 960 943 191 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 128 960 943 159 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 224 976 943 255 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 192 976 943 223 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 160 976 943 191 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 128 976 943 159 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 224 992 943 255 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 192 992 943 223 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 160 992 943 191 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 128 992 943 159 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 224 1008 943 255 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 192 1008 943 223 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 160 1008 943 191 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 128 1008 943 159 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 224 1024 943 255 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 192 1024 943 223 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 160 1024 943 191 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 128 1024 943 159 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 224 1040 943 255 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 192 1040 943 223 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 160 1040 943 191 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 128 1040 943 159 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 224 1056 943 255 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 192 1056 943 223 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 160 1056 943 191 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 936 128 1056 943 159 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 224 936 959 255 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 192 936 959 223 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 160 936 959 191 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 128 936 959 159 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 224 944 959 255 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 192 944 959 223 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 160 944 959 191 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 128 944 959 159 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 224 960 959 255 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 192 960 959 223 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 160 960 959 191 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 128 960 959 159 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 224 976 959 255 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 192 976 959 223 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 160 976 959 191 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 128 976 959 159 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 224 992 959 255 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 192 992 959 223 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 160 992 959 191 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 128 992 959 159 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 224 1008 959 255 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 192 1008 959 223 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 160 1008 959 191 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 128 1008 959 159 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 224 1024 959 255 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 192 1024 959 223 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 160 1024 959 191 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 128 1024 959 159 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 224 1040 959 255 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 192 1040 959 223 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 160 1040 959 191 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 128 1040 959 159 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 224 1056 959 255 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 192 1056 959 223 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 160 1056 959 191 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 944 128 1056 959 159 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 224 936 975 255 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 192 936 975 223 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 160 936 975 191 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 128 936 975 159 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 224 944 975 255 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 192 944 975 223 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 160 944 975 191 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 128 944 975 159 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 224 960 975 255 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 192 960 975 223 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 160 960 975 191 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 128 960 975 159 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 224 976 975 255 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 192 976 975 223 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 160 976 975 191 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 128 976 975 159 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 224 992 975 255 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 192 992 975 223 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 160 992 975 191 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 128 992 975 159 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 224 1008 975 255 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 192 1008 975 223 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 160 1008 975 191 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 128 1008 975 159 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 224 1024 975 255 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 192 1024 975 223 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 160 1024 975 191 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 128 1024 975 159 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 224 1040 975 255 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 192 1040 975 223 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 160 1040 975 191 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 128 1040 975 159 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 224 1056 975 255 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 192 1056 975 223 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 160 1056 975 191 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 960 128 1056 975 159 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 224 936 991 255 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 192 936 991 223 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 160 936 991 191 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 128 936 991 159 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 224 944 991 255 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 192 944 991 223 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 160 944 991 191 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 128 944 991 159 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 224 960 991 255 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 192 960 991 223 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 160 960 991 191 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 128 960 991 159 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 224 976 991 255 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 192 976 991 223 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 160 976 991 191 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 128 976 991 159 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 224 992 991 255 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 192 992 991 223 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 160 992 991 191 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 128 992 991 159 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 224 1008 991 255 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 192 1008 991 223 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 160 1008 991 191 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 128 1008 991 159 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 224 1024 991 255 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 192 1024 991 223 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 160 1024 991 191 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 128 1024 991 159 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 224 1040 991 255 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 192 1040 991 223 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 160 1040 991 191 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 128 1040 991 159 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 224 1056 991 255 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 192 1056 991 223 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 160 1056 991 191 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 976 128 1056 991 159 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 224 936 1007 255 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 192 936 1007 223 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 160 936 1007 191 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 128 936 1007 159 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 224 944 1007 255 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 192 944 1007 223 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 160 944 1007 191 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 128 944 1007 159 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 224 960 1007 255 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 192 960 1007 223 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 160 960 1007 191 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 128 960 1007 159 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 224 976 1007 255 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 192 976 1007 223 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 160 976 1007 191 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 128 976 1007 159 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 224 992 1007 255 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 192 992 1007 223 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 160 992 1007 191 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 128 992 1007 159 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 224 1008 1007 255 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 192 1008 1007 223 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 160 1008 1007 191 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 128 1008 1007 159 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 224 1024 1007 255 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 192 1024 1007 223 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 160 1024 1007 191 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 128 1024 1007 159 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 224 1040 1007 255 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 192 1040 1007 223 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 160 1040 1007 191 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 128 1040 1007 159 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 224 1056 1007 255 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 192 1056 1007 223 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 160 1056 1007 191 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 992 128 1056 1007 159 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 224 936 1023 255 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 192 936 1023 223 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 160 936 1023 191 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 128 936 1023 159 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 224 944 1023 255 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 192 944 1023 223 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 160 944 1023 191 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 128 944 1023 159 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 224 960 1023 255 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 192 960 1023 223 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 160 960 1023 191 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 128 960 1023 159 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 224 976 1023 255 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 192 976 1023 223 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 160 976 1023 191 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 128 976 1023 159 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 224 992 1023 255 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 192 992 1023 223 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 160 992 1023 191 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 128 992 1023 159 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 224 1008 1023 255 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 192 1008 1023 223 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 160 1008 1023 191 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 128 1008 1023 159 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 224 1024 1023 255 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 192 1024 1023 223 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 160 1024 1023 191 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 128 1024 1023 159 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 224 1040 1023 255 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 192 1040 1023 223 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 160 1040 1023 191 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 128 1040 1023 159 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 224 1056 1023 255 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 192 1056 1023 223 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 160 1056 1023 191 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1008 128 1056 1023 159 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 224 936 1039 255 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 192 936 1039 223 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 160 936 1039 191 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 128 936 1039 159 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 224 944 1039 255 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 192 944 1039 223 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 160 944 1039 191 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 128 944 1039 159 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 224 960 1039 255 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 192 960 1039 223 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 160 960 1039 191 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 128 960 1039 159 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 224 976 1039 255 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 192 976 1039 223 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 160 976 1039 191 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 128 976 1039 159 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 224 992 1039 255 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 192 992 1039 223 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 160 992 1039 191 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 128 992 1039 159 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 224 1008 1039 255 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 192 1008 1039 223 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 160 1008 1039 191 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 128 1008 1039 159 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 224 1024 1039 255 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 192 1024 1039 223 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 160 1024 1039 191 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 128 1024 1039 159 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 224 1040 1039 255 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 192 1040 1039 223 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 160 1040 1039 191 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 128 1040 1039 159 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 224 1056 1039 255 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 192 1056 1039 223 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 160 1056 1039 191 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1024 128 1056 1039 159 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 224 936 1055 255 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 192 936 1055 223 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 160 936 1055 191 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 128 936 1055 159 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 224 944 1055 255 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 192 944 1055 223 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 160 944 1055 191 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 128 944 1055 159 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 224 960 1055 255 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 192 960 1055 223 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 160 960 1055 191 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 128 960 1055 159 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 224 976 1055 255 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 192 976 1055 223 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 160 976 1055 191 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 128 976 1055 159 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 224 992 1055 255 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 192 992 1055 223 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 160 992 1055 191 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 128 992 1055 159 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 224 1008 1055 255 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 192 1008 1055 223 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 160 1008 1055 191 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 128 1008 1055 159 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 224 1024 1055 255 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 192 1024 1055 223 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 160 1024 1055 191 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 128 1024 1055 159 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 224 1040 1055 255 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 192 1040 1055 223 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 160 1040 1055 191 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 128 1040 1055 159 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 224 1056 1055 255 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 192 1056 1055 223 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 160 1056 1055 191 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1040 128 1056 1055 159 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 224 936 1063 255 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 192 936 1063 223 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 160 936 1063 191 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 128 936 1063 159 943 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 224 944 1063 255 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 192 944 1063 223 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 160 944 1063 191 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 128 944 1063 159 959 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 224 960 1063 255 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 192 960 1063 223 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 160 960 1063 191 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 128 960 1063 159 975 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 224 976 1063 255 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 192 976 1063 223 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 160 976 1063 191 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 128 976 1063 159 991 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 224 992 1063 255 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 192 992 1063 223 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 160 992 1063 191 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 128 992 1063 159 1007 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 224 1008 1063 255 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 192 1008 1063 223 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 160 1008 1063 191 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 128 1008 1063 159 1023 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 224 1024 1063 255 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 192 1024 1063 223 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 160 1024 1063 191 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 128 1024 1063 159 1039 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 224 1040 1063 255 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 192 1040 1063 223 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 160 1040 1063 191 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 128 1040 1063 159 1055 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 224 1056 1063 255 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 192 1056 1063 223 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 160 1056 1063 191 1063 minecraft:netherrack replace #kbt:arena/not_netherrack
+fill 1056 128 1056 1063 159 1063 minecraft:netherrack replace #kbt:arena/not_netherrack

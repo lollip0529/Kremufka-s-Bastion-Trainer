@@ -1,5 +1,6 @@
 function kbt:arena/lava_fix/cancel
 function kbt:settings/init
+function kbt:arena/invalidate
 scoreboard players set #kbt_tick2 kbt.settings 0
 scoreboard players set #kbt_tick5 kbt.settings 0
 scoreboard players set #kbt_tick20 kbt.settings 0

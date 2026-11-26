@@ -4,6 +4,7 @@ scoreboard players operation #rp_completed_job kbt.settings = #rp_job kbt.settin
 scoreboard players set #rp_job kbt.settings 0
 scoreboard players set #rp_in_place kbt.settings 0
 execute if score #rp_completed_job kbt.settings matches 2 run function kbt:arena/clear_ground_items
+execute if score #rp_completed_job kbt.settings matches 2 run function kbt:arena/invalidate
 execute in minecraft:the_nether run function kbt:routes/practice/cleanup
 function kbt:routes/practice/job/restore_mode
 tag @s remove kbt.rp_owner

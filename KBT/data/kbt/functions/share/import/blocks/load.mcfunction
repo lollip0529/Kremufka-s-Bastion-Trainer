@@ -8,3 +8,4 @@ execute if score #sh_backup kbt.settings matches 1 run setblock 934 128 936 mine
 execute if score #sh_backup kbt.settings matches 1 run schedule function kbt:share/import/blocks/finish 2t replace
 execute unless score #sh_backup kbt.settings matches 1 run tellraw @s {"text":"Could not prepare the snapshot loader. Try importing again.","color":"red"}
 execute unless score #sh_backup kbt.settings matches 1 run function kbt:share/booth/close
+function kbt:arena/invalidate

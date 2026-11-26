@@ -1,0 +1,1 @@
+{"criteria":{"placed":{"trigger":"minecraft:placed_block","conditions":{"location":{"dimension":"minecraft:the_nether","position":{"x":{"min":936,"max":1063.999},"y":{"min":201,"max":255.999},"z":{"min":936,"max":1063.999}}}}}},"rewards":{"function":"kbt:arena/mark_high_dirty"}}

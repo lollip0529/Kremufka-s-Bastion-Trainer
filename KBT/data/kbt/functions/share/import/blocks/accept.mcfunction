@@ -11,3 +11,4 @@ execute if data storage kbt:share payload{v:1,blocks:1b} if score #arena_type kb
 execute if data storage kbt:share payload{v:1,blocks:1b} if score #arena_ready kbt.settings matches 1 run data modify storage kbt:share blocks_loaded set value 1b
 function kbt:share/booth/close
 function kbt:share/import/check
+function kbt:arena/invalidate

@@ -8,6 +8,7 @@ function kbt:savestate/entities
 scoreboard players operation #ss_max_e kbt.settings > #ss_n kbt.settings
 function kbt:savestate/clear_restore_drops
 function kbt:savestate/rules_end
+function kbt:arena/invalidate
 function kbt:savestate/restore_runtime
 function kbt:savestate/restore_scores
 scoreboard players set #arena_drop_ticks kbt.settings 0

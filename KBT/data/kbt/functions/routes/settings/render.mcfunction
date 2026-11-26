@@ -6,3 +6,4 @@ scoreboard players set @s kbt.rp_layout 7
 clear @a[distance=..8] #kbt:menu_tokens{kbt_menu:1b}
 data modify storage kbt:settings_poll Items set value []
 data modify storage kbt:settings_poll Items set from block ~ ~ ~ Items
+data modify storage kbt:settings_poll RouteLast set from storage kbt:settings_poll Items

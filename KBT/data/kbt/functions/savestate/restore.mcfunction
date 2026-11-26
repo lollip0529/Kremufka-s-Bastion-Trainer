@@ -2,13 +2,20 @@ title @s actionbar {"text":"Restoring savestate...","color":"aqua"}
 function kbt:savestate/rules_begin
 scoreboard players set #ss_action kbt.settings 1
 execute as @e[type=!minecraft:player,x=936,y=128,z=936,dx=127,dy=127,dz=127] run function kbt:savestate/discard_entity
-execute if data storage kbt:savestate current{bank:0} run function kbt:savestate/tiles/a
-execute if data storage kbt:savestate current{bank:1} run function kbt:savestate/tiles/b
+execute if data storage kbt:savestate current{full:0b} run function kbt:arena/reset_outer
+execute if data storage kbt:savestate current{full:0b} run function kbt:arena/reset_high
+execute if data storage kbt:savestate current{bank:0,full:0b} run function kbt:savestate/tiles/fast_a
+execute if data storage kbt:savestate current{bank:1,full:0b} run function kbt:savestate/tiles/fast_b
+execute if data storage kbt:savestate current{bank:0} unless data storage kbt:savestate current{full:0b} run function kbt:savestate/tiles/a
+execute if data storage kbt:savestate current{bank:1} unless data storage kbt:savestate current{full:0b} run function kbt:savestate/tiles/b
 function kbt:savestate/entities
 scoreboard players operation #ss_max_e kbt.settings > #ss_n kbt.settings
 function kbt:savestate/clear_restore_drops
 function kbt:savestate/rules_end
 function kbt:arena/invalidate
+execute if data storage kbt:savestate current{full:0b} run scoreboard players set #arena_outer_dirty kbt.settings 0
+execute if data storage kbt:savestate current{full:0b} run scoreboard players set #arena_high_dirty kbt.settings 0
+execute if data storage kbt:savestate current{full:0b} store result score #arena_built_floor kbt.settings run data get storage kbt:savestate current.floor
 function kbt:savestate/restore_runtime
 function kbt:savestate/restore_scores
 scoreboard players set #arena_drop_ticks kbt.settings 0

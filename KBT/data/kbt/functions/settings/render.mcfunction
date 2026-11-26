@@ -8,3 +8,4 @@ execute if score @s kbt.page matches 4 run function kbt:settings/pages/stables/r
 clear @a[distance=..8] #kbt:menu_tokens{kbt_menu:1b}
 data modify storage kbt:settings_poll Items set value []
 data modify storage kbt:settings_poll Items set from block ~ ~ ~ Items
+data modify storage kbt:settings_poll MainLast set from storage kbt:settings_poll Items

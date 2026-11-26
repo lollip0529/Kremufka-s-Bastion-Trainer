@@ -1,0 +1,2 @@
+tellraw @s [{"text":"More routes on Discord: ","color":"aqua"},{"text":"https://discord.gg/evgYezkBQn","color":"light_purple","underlined":true,"clickEvent":{"action":"open_url","value":"https://discord.gg/evgYezkBQn"},"hoverEvent":{"action":"show_text","contents":{"text":"Join the Discord server for more routes","color":"aqua"}}}]
+playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 0.35 1.4

@@ -1,10 +1,5 @@
-function kbt:fortpie/clear
-function kbt:debug/info/reset
-scoreboard players set #gold_ground kbt.settings 0
-execute if score #rp_active kbt.settings matches 1 run function kbt:routes/practice/stop
-data remove storage kbt:share arena
-scoreboard players set #arena_ready kbt.settings 0
-scoreboard players set #arena_migrate kbt.settings 0
+function kbt:arena/mutation/begin
+function kbt:arena/reset_state
 fill 936 128 936 951 255 951 air
 fill 936 128 952 951 255 967 air
 fill 936 128 968 951 255 983 air
@@ -69,5 +64,5 @@ fill 1048 128 1000 1063 255 1015 air
 fill 1048 128 1016 1063 255 1031 air
 fill 1048 128 1032 1063 255 1047 air
 fill 1048 128 1048 1063 255 1063 air
-
 kill @e[x=936,y=128,z=936,dx=127,dy=127,dz=127,type=!player]
+function kbt:arena/mutation/end

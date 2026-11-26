@@ -1,4 +1,5 @@
 execute unless data storage kbt:route_runtime validate_element.text.json run scoreboard players set #rc_save_valid kbt.settings 0
+execute if data storage kbt:route_runtime validate_element.activation unless data storage kbt:route_runtime validate_element{activation:"area"} unless data storage kbt:route_runtime validate_element{activation:"stage"} run scoreboard players set #rc_save_valid kbt.settings 0
 scoreboard players set #rc_message_size kbt.settings 0
 execute store result score #rc_message_size kbt.settings run data get storage kbt:route_runtime validate_element.area
 execute unless score #rc_message_size kbt.settings matches 1..64 run scoreboard players set #rc_save_valid kbt.settings 0

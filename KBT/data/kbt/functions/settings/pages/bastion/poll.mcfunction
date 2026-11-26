@@ -1,4 +1,5 @@
-execute unless data block ~ ~ ~ Items[{Slot:4b,tag:{kbt_menu:1b,kbt_action:"bastion_title",kbt_layout:2b}}] run function kbt:settings/render
+execute unless data block ~ ~ ~ Items[{Slot:4b,tag:{kbt_menu:1b,kbt_action:"bastion_title",kbt_layout:5b}}] run function kbt:settings/render
+execute unless score @s kbt.blava = #bridge_lava kbt.settings run function kbt:settings/render
 execute unless score @s kbt.specific = #gp_bastion kbt.settings run function kbt:settings/render
 execute unless score @s kbt.left = #bridge_left kbt.settings run function kbt:settings/render
 execute unless score @s kbt.right = #bridge_right kbt.settings run function kbt:settings/render
@@ -23,3 +24,4 @@ execute if score #gp_bastion kbt.settings matches 2 unless data block ~ ~ ~ Item
 execute unless data block ~ ~ ~ Items[{Slot:22b,id:"minecraft:gilded_blackstone",tag:{kbt_menu:1b,kbt_action:"back"}}] run function kbt:settings/pages/main/open
 execute if score @s kbt.page matches 1 unless data block ~ ~ ~ Items[{Slot:9b,tag:{kbt_menu:1b,kbt_action:"previous"}}] run function kbt:settings/pages/previous
 execute if score @s kbt.page matches 1 unless data block ~ ~ ~ Items[{Slot:17b,tag:{kbt_menu:1b,kbt_action:"next"}}] run function kbt:settings/pages/next
+execute if score @s kbt.page matches 1 if score #gp_bastion kbt.settings matches 0 unless data block ~ ~ ~ Items[{Slot:14b,id:"minecraft:lava_bucket",tag:{kbt_menu:1b,kbt_action:"bridge_lava"}}] run function kbt:settings/cycle_bridge_lava

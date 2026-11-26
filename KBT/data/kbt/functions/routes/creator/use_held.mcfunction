@@ -1,6 +1,6 @@
 scoreboard players set #rc_tool kbt.settings 0
 execute store result score #rc_tool kbt.settings run data get entity @s SelectedItem.tag.kbtRouteTool
-execute if data storage kbt:routes draft{mode:"movement"} unless score #rc_tool kbt.settings matches 1..2 unless score #rc_tool kbt.settings matches 4 unless score #rc_tool kbt.settings matches 6..7 unless score #rc_tool kbt.settings matches 9..11 unless score #rc_tool kbt.settings matches 16 run scoreboard players set #rc_tool kbt.settings 0
+execute if data storage kbt:routes draft{mode:"movement"} unless score #rc_tool kbt.settings matches 1..2 unless score #rc_tool kbt.settings matches 4 unless score #rc_tool kbt.settings matches 6..7 unless score #rc_tool kbt.settings matches 9..11 unless score #rc_tool kbt.settings matches 16 unless score #rc_tool kbt.settings matches 19..20 run scoreboard players set #rc_tool kbt.settings 0
 execute if score #rc_tool kbt.settings matches 9 run function kbt:routes/creator/menu
 execute if score #rc_tool kbt.settings matches 9 run scoreboard players set @s kbt.rc_cd 6
 execute unless score #rc_tool kbt.settings matches 9 unless score #rc_tool kbt.settings matches 12 unless score #rc_tool kbt.settings matches 15 unless score #rc_tool kbt.settings matches 17 if data storage kbt:route_text pending run tellraw @s {"text":"Save or Cancel the pending element first. Editor: /trigger kbt.rc_menu set 61","color":"yellow"}
@@ -12,3 +12,7 @@ execute unless data storage kbt:route_text pending if score #rc_tool kbt.setting
 execute unless data storage kbt:route_text pending if score #rc_tool kbt.settings matches 1..17 unless score #rc_tool kbt.settings matches 16 unless score #rc_tool kbt.settings matches 9 run function kbt:routes/creator/use
 execute unless data storage kbt:route_text pending if score #rc_tool kbt.settings matches 16 run function kbt:routes/creator/remove/start
 execute unless data storage kbt:route_text pending if score #rc_tool kbt.settings matches 18 run function kbt:routes/creator/phase_copy/start
+execute unless data storage kbt:route_text pending if score #rc_tool kbt.settings matches 19 run function kbt:routes/creator/edit/start
+execute unless data storage kbt:route_text pending if score #rc_tool kbt.settings matches 20 run function kbt:routes/creator/move/start
+execute unless data storage kbt:route_text pending if score #rc_tool kbt.settings matches 21 store result storage kbt:routes draft.tool int 1 run scoreboard players get #rc_tool kbt.settings
+execute unless data storage kbt:route_text pending if score #rc_tool kbt.settings matches 21 run function kbt:routes/creator/use

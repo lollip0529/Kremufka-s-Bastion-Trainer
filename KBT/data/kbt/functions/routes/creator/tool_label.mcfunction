@@ -15,4 +15,7 @@ execute if score #rc_tool kbt.settings matches 14 run data modify storage kbt:ro
 execute if score #rc_tool kbt.settings matches 15 run data modify storage kbt:routes draft.tool_name set value "Toggle Piglins"
 execute if score #rc_tool kbt.settings matches 17 run data modify storage kbt:routes draft.tool_name set value "Toggle Hoglins"
 execute if score #rc_tool kbt.settings matches 16 run data modify storage kbt:routes draft.tool_name set value "Remove"
-execute if score #rc_tool kbt.settings matches 18 run data modify storage kbt:routes draft.tool_name set value "Rebuild Previous Phase"
+execute if score #rc_tool kbt.settings matches 18 run data modify storage kbt:routes draft.tool_name set value "Fix current phase"
+execute if score #rc_tool kbt.settings matches 19 run data modify storage kbt:routes draft.tool_name set value "Edit"
+execute if score #rc_tool kbt.settings matches 20 run data modify storage kbt:routes draft.tool_name set value "Move"
+execute if score #rc_tool kbt.settings matches 21 run data modify storage kbt:routes draft.tool_name set value "Throw Gold"

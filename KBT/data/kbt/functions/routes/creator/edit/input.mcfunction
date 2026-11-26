@@ -1,0 +1,2 @@
+execute if score @s kbt.creator matches 1 if entity @s[nbt={Dimension:"minecraft:the_nether"},nbt=!{Health:0.0f}] unless score #rp_job kbt.settings matches 1.. unless score #rc_generating kbt.settings matches 1 unless score #ki_busy kbt.settings matches 1 unless data storage kbt:route_text pending if data storage kbt:route_edit selection run function kbt:routes/creator/edit/dispatch
+scoreboard players set @s kbt.rc_edit 0

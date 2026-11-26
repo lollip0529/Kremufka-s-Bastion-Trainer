@@ -15,3 +15,4 @@ execute as @a[scores={kbt.gp_timer=1..}] unless entity @s[gamemode=survival,scor
 execute as @a[scores={kbt.gp_timer=2,kbt.run=2}] run function kbt:practice/timer/tick
 execute as @a[scores={kbt.run=1},nbt=!{Health:0.0f}] at @s run function kbt:practice/movement/check
 function kbt:practice/difficulty
+function kbt:practice/spawn/custom/tick

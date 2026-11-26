@@ -1,4 +1,5 @@
 execute unless score #bastion kbt.settings matches 0..3 run scoreboard players set #bastion kbt.settings 0
+execute unless score #floor kbt.settings matches 0..3 run scoreboard players set #floor kbt.settings 0
 execute unless score #bridge_left kbt.settings matches 0..2 run scoreboard players set #bridge_left kbt.settings 2
 execute unless score #bridge_right kbt.settings matches 0..2 run scoreboard players set #bridge_right kbt.settings 2
 execute unless score #h_left kbt.settings matches 0..3 run scoreboard players set #h_left kbt.settings 3
@@ -9,3 +10,4 @@ execute unless score #s_mid_ramp kbt.settings matches 0..3 run scoreboard player
 execute unless score #s_right_ramp kbt.settings matches 0..3 run scoreboard players set #s_right_ramp kbt.settings 3
 execute unless score #t_center kbt.settings matches 0..4 run scoreboard players set #t_center kbt.settings 4
 execute unless score #t_spawner kbt.settings matches 0..1 run scoreboard players set #t_spawner kbt.settings 0
+execute unless score #bridge_lava kbt.settings matches 0..1 run scoreboard players set #bridge_lava kbt.settings 0

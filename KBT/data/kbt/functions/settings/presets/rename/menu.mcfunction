@@ -1,0 +1,1 @@
+tellraw @s [{"text":"[Apply Name] ","color":"green","bold":true,"clickEvent":{"action":"run_command","value":"/trigger kbt.preset set 4"}},{"text":"[Cancel Rename]","color":"gray","clickEvent":{"action":"run_command","value":"/trigger kbt.preset set 5"}}]

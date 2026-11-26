@@ -1,7 +1,4 @@
-data modify storage kbt:route_runtime element set from storage kbt:route_text pending.element
-data remove storage kbt:route_runtime element.pending
-execute store result score #rc_tool kbt.settings run data get storage kbt:route_runtime element.type
-data modify storage kbt:routes draft.tool set from storage kbt:route_runtime element.type
-function kbt:routes/creator/tool_label
-function kbt:routes/creator/text/clear
-execute in minecraft:the_nether run function kbt:routes/creator/points/commit
+scoreboard players set #rc_text_existing kbt.settings 0
+execute if data storage kbt:route_text pending.edit{active:1b} run scoreboard players set #rc_text_existing kbt.settings 1
+execute if score #rc_text_existing kbt.settings matches 1 run function kbt:routes/creator/edit/save
+execute if score #rc_text_existing kbt.settings matches 0 run function kbt:routes/creator/text/commit_new

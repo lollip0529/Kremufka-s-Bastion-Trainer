@@ -1,0 +1,1 @@
+execute if score @s kbt.rp_done matches 0 positioned ~-0.5 ~-0.5 ~-0.5 if entity @e[type=minecraft:item,tag=kbt.rp_gold_live,tag=!kbt.rp_gold_used,nbt={Item:{id:"minecraft:gold_ingot"}},dx=0,dy=0,dz=0] run function kbt:routes/practice/gold/hit

@@ -10,6 +10,5 @@ execute positioned ~-25 ~21 ~36 run function bastionbuilder:internal/place/treas
 execute positioned ~-11 ~52 ~38 run function bastionbuilder:internal/place/treasure/ramparts/top_wall/rot_270
 execute positioned ~-25 ~53 ~36 run function bastionbuilder:internal/place/treasure/ramparts/top_wall/rot_270
 execute positioned ~-25 ~33 ~19 run function bastionbuilder:internal/place/treasure/entrances/entrance_0/rot_270
-
 execute if score treasure_spawner bastion.settings matches 0 run setblock ~-18 ~7 ~-26 coal_block
 execute if score treasure_spawner bastion.settings matches 1 run setblock ~-18 ~7 ~-26 spawner{SpawnData:{id:"magma_cube"}, MinSpawnDelay:31415s, SpawnCount:0s, Delay:-1s}

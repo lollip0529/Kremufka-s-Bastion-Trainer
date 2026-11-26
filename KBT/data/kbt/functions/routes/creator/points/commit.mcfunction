@@ -15,6 +15,7 @@ execute if score #rc_tool kbt.settings matches 10..12 run function kbt:routes/cr
 execute if score #rc_tool kbt.settings matches 13 run function kbt:routes/creator/stages/apply
 execute if score #rc_tool kbt.settings matches 15 run function kbt:routes/creator/stages/apply
 execute if score #rc_tool kbt.settings matches 17 run function kbt:routes/creator/stages/apply
+execute if score #rc_tool kbt.settings matches 21 run function kbt:routes/creator/stages/apply
 tellraw @s [{"text":"Added ","color":"aqua"},{"nbt":"draft.tool_name","storage":"kbt:routes","color":"gold"},{"text":" | stage ","color":"gray"},{"nbt":"element.stage","storage":"kbt:route_runtime","color":"light_purple"}]
 execute if score #rc_addstage kbt.settings matches 1 run function kbt:routes/creator/points/next_stage
 execute if score #rc_extend kbt.settings matches 1 run data modify storage kbt:routes draft.stage set from storage kbt:route_runtime checkpoint_focus

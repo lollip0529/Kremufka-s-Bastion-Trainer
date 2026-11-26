@@ -1,5 +1,10 @@
 function kbt:routes/creator/empty/cleanup
+execute if score #lv_active kbt.settings matches 1 run function kbt:routes/creator/layout_check/cancel
+execute if data storage kbt:route_setup edit_generation{queued:1b} run function kbt:routes/setup/cancel_generation
+execute if data storage kbt:route_setup edit_generation run function kbt:routes/creator/generation/cancel
 function kbt:routes/creator/text/clear
+data remove storage kbt:route_move session
+data remove storage kbt:route_edit selection
 function kbt:routes/creator/naming/clear
 execute in minecraft:the_nether run kill @e[type=minecraft:armor_stand,tag=kbt.rc_preview]
 execute in minecraft:the_nether run kill @e[type=minecraft:armor_stand,tag=kbt.rc_preview_origin]

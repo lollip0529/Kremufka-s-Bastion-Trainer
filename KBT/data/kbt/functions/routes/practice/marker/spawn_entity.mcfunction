@@ -10,6 +10,8 @@ execute if score @s kbt.rp_type matches 12 run data merge entity @s {CustomNameV
 execute if score @s kbt.rp_type matches 15 run scoreboard players operation @s kbt.rp_msg = #rp_message_id kbt.settings
 execute if score @s kbt.rp_type matches 17 run scoreboard players operation @s kbt.rp_msg = #rp_message_id kbt.settings
 execute if score @s kbt.rp_type matches 13 run data modify entity @s ArmorItems[3] set from storage kbt:route_practice element.head
-execute if score @s kbt.rp_type matches 13 run data modify entity @s Rotation set from storage kbt:route_practice element.rotation
+execute if score @s kbt.rp_type matches 13 run data modify storage kbt:head_pose source set value [0.0f,0.0f]
+execute if score @s kbt.rp_type matches 13 run data modify storage kbt:head_pose source set from storage kbt:route_practice element.rotation
+execute if score @s kbt.rp_type matches 13 run function kbt:routes/head/pose
 tag @s remove kbt.rp_new
 execute at @s run function kbt:routes/practice/marker/arm

@@ -1,4 +1,8 @@
 data modify storage kbt:route_browser chat_choices append from storage kbt:route_browser chat_queue[0]
+data modify storage kbt:route_favorites input set from storage kbt:route_browser chat_queue[0]
+function kbt:route_browser/catalog/favorites/check
+data modify storage kbt:route_browser chat_star set value "☆"
+execute if score #rb_fav_found kbt.settings matches 1 run data modify storage kbt:route_browser chat_star set value "★"
 execute store result score #rb_chat_id kbt.settings run data get storage kbt:route_browser chat_queue[0].id
 execute if score #rb_chat_budget kbt.settings matches 10 run function kbt:route_browser/catalog/chat/slot_1
 execute if score #rb_chat_budget kbt.settings matches 9 run function kbt:route_browser/catalog/chat/slot_2

@@ -1,3 +1,7 @@
+scoreboard objectives add kbt.gp_loadmode dummy
+execute if score #gp_loading kbt.settings matches 1.. run function kbt:practice/loading/cancel
+scoreboard players set #gp_loading kbt.settings 0
+scoreboard players set #gp_generation kbt.settings 0
 scoreboard objectives add kbt.drop_wood minecraft.dropped:minecraft.wooden_pickaxe
 scoreboard objectives add kbt.drop_stone minecraft.dropped:minecraft.stone_pickaxe
 scoreboard objectives add kbt.drop_iron minecraft.dropped:minecraft.iron_pickaxe
@@ -16,3 +20,4 @@ scoreboard objectives add kbt.start_z dummy
 scoreboard objectives add kbt.jump minecraft.custom:minecraft.jump
 scoreboard objectives add kbt.climb minecraft.custom:minecraft.climb_one_cm
 function kbt:practice/movement/mining/init
+function kbt:practice/spawn/custom/init

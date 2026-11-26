@@ -1,6 +1,7 @@
 execute as @a[scores={kbt.rc_wiz=1,kbt.rc_menu=130}] run function kbt:routes/creator/drafts/list
 execute as @a[scores={kbt.rc_wiz=1,kbt.rc_menu=131..132}] at @s run function kbt:routes/creator/drafts/open
 execute as @a[scores={kbt.rc_wiz=1,kbt.rc_menu=17}] run function kbt:routes/creator/catalog/list
+execute as @a[scores={kbt.rc_wiz=1,kbt.rc_tab=1..2}] run function kbt:routes/creator/catalog/change_tab
 execute if score #rc_generating kbt.settings matches 0 as @a[tag=kbt.rc_creating] run function kbt:routes/setup/restore_mode
 execute if score #rc_generating kbt.settings matches 0 run tag @a remove kbt.rc_creating
 execute if score #rc_generating kbt.settings matches 1 unless entity @a[tag=kbt.rc_creating,nbt=!{Health:0.0f}] run scoreboard players set #rc_generating kbt.settings 0

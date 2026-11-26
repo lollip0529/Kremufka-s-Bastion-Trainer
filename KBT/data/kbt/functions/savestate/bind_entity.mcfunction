@@ -2,6 +2,7 @@ data merge entity @s {Motion:[0.0d,0.0d,0.0d],NoAI:1b,NoGravity:1b,Invulnerable:
 data modify entity @s Pos set from storage kbt:savestate entity.nbt.Pos
 data modify entity @s Rotation set from storage kbt:savestate entity.nbt.Rotation
 tag @s add kbt.ss_frozen
+scoreboard players set #ss_has_frozen kbt.settings 1
 execute if data storage kbt:savestate entity.nbt{NoGravity:1b} run tag @s add kbt.ss_gravity
 execute if data storage kbt:savestate entity.nbt{Invulnerable:1b} run tag @s add kbt.ss_invulnerable
 execute if data storage kbt:savestate entity.scores.kbt_rc_cd store result score @s kbt.rc_cd run data get storage kbt:savestate entity.scores.kbt_rc_cd

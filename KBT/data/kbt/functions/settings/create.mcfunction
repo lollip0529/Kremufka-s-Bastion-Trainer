@@ -3,3 +3,4 @@ summon minecraft:armor_stand ~ ~ ~ {Tags:["kbt.settings_chest"],Invisible:1b,Mar
 execute as @e[type=minecraft:armor_stand,tag=kbt.settings_chest,distance=..0.1,limit=1] run function kbt:settings/render
 scoreboard players set #placed kbt.menu 1
 tellraw @s {"text":"Settings chest created. Pick up Bastion Type to change the selection.","color":"gold"}
+scoreboard players set #custom_settings_chest kbt.settings 1

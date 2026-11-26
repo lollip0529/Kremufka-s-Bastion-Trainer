@@ -9,3 +9,4 @@ gamemode adventure @s
 function kbt:routes/practice/lobby_teleport
 execute in minecraft:the_nether at @s run function kbt:practice/extinguish
 function kbt:practice/difficulty
+scoreboard players enable @s kbt.rp_action

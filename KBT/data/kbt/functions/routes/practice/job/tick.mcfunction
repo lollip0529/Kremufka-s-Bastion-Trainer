@@ -1,4 +1,4 @@
-execute unless entity @a[tag=kbt.rp_owner,nbt=!{Health:0.0f}] run function kbt:routes/practice/job/abort
+execute unless entity @a[tag=kbt.rp_owner,scores={kbt.hp=1..}] run function kbt:routes/practice/job/abort
 execute if score #rp_job kbt.settings matches 1.. run scoreboard players add #rp_elapsed kbt.settings 1
 execute if score #rp_elapsed kbt.settings matches 601.. run function kbt:routes/practice/job/abort
 execute if entity @a[tag=kbt.rp_owner,scores={kbt.deaths=1..}] run function kbt:routes/practice/job/abort

@@ -33,3 +33,4 @@ data remove storage kbt:savestate labels[0]
 scoreboard players add #ss_index kbt.settings 1
 data merge entity @s {NoAI:1b,NoGravity:1b,Invulnerable:1b}
 execute if entity @s[type=minecraft:item] run tag @s add kbt.ss_frozen
+execute if entity @s[type=minecraft:item] run scoreboard players set #ss_has_frozen kbt.settings 1

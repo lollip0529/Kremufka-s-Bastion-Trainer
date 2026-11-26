@@ -1,4 +1,5 @@
 scoreboard players set #ss_player_job kbt.settings 1
+scoreboard players set #ss_has_cell kbt.settings 1
 scoreboard players set #ss_player_ticks kbt.settings 0
 tag @s add kbt.ss_player_job
 data modify storage kbt:savestate resume_pos set from entity @s Pos

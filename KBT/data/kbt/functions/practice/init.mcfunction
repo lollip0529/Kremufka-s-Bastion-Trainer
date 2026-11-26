@@ -14,6 +14,8 @@ scoreboard objectives add kbt.gp_timer dummy
 scoreboard objectives add kbt.gp_time dummy
 scoreboard objectives add kbt.gp_hud dummy
 scoreboard objectives add kbt.deaths deathCount
+scoreboard objectives add kbt.hp health
+execute as @a unless score @s kbt.hp matches 0.. store result score @s kbt.hp run data get entity @s Health 1000
 scoreboard objectives add kbt.leaves minecraft.custom:minecraft.leave_game
 scoreboard objectives add kbt.start_x dummy
 scoreboard objectives add kbt.start_z dummy

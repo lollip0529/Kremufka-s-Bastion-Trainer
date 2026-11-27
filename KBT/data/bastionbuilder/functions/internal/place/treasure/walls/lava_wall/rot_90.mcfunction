@@ -1,3 +1,4 @@
+execute if score #run_floor kbt.settings matches 2 unless score #bb_buried_same kbt.settings matches 1 run function bastionbuilder:internal/exact/ba_treasure_walls_lava_wall
 clone ~ ~ ~ ~ ~1 ~ ~ 254 ~
 function bastionbuilder:internal/foundations/treasure/walls/lava_wall/rot_90
 function bastionbuilder:internal/processors/treasure/walls/lava_wall/processor_0/rot_90

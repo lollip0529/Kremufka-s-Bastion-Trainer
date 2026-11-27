@@ -1,3 +1,4 @@
+execute if score #run_floor kbt.settings matches 2 unless score #bb_buried_same kbt.settings matches 1 run function bastionbuilder:internal/exact/ba_treasure_ramparts_mid_wall_main
 clone ~ ~ ~ ~ ~1 ~ ~ 254 ~
 function bastionbuilder:internal/foundations/treasure/ramparts/mid_wall_main/rot_90
 function bastionbuilder:internal/processors/treasure/ramparts/mid_wall_main/processor_0/rot_90

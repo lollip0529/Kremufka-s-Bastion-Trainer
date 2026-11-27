@@ -10,6 +10,7 @@
     "minecraft:sticky_piston",
     "minecraft:moving_piston",
     "minecraft:chest",
-    "minecraft:spawner"
+    "minecraft:spawner",
+    "minecraft:gold_block"
   ]
 }

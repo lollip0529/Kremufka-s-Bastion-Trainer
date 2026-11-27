@@ -1,3 +1,4 @@
+execute if score #run_floor kbt.settings matches 2 run function bastionbuilder:internal/exact/ba_treasure_bases_centers_center_0
 clone ~ ~ ~ ~ ~1 ~ ~ 254 ~
 function bastionbuilder:internal/foundations/treasure/bases/centers/center_0/rot_0
 function bastionbuilder:internal/processors/treasure/bases/centers/center_0/processor_0/rot_0

@@ -1,3 +1,4 @@
+execute if score #run_floor kbt.settings matches 2 run function bastionbuilder:internal/exact/ba_bridge_rampart_plates_plate_0
 clone ~ ~ ~ ~ ~1 ~ ~ 254 ~
 function bastionbuilder:internal/foundations/bridge/rampart_plates/plate_0/rot_0
 function bastionbuilder:internal/processors/bridge/rampart_plates/plate_0/processor_0/rot_0

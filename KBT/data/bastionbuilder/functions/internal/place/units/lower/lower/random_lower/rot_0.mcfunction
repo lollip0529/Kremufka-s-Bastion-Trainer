@@ -3,7 +3,6 @@ function bastionbuilder:internal/utils/rng/new_int
 scoreboard players operation units_lower bastion.temp = out bastion.rng
 execute if score #bb_inplace kbt.settings matches 1 unless score units_lower bastion.temp = #last_h_lo kbt.settings run function bastionbuilder:internal/exact/units_open_partial_air
 execute if score #bb_buried_same kbt.settings matches 1 unless score units_lower bastion.temp = #last_h_lo kbt.settings run function bastionbuilder:internal/exact/units_buried_partial_nr
-execute if score #bb_buried_same kbt.settings matches 1 unless score units_lower bastion.temp = #last_h_lo kbt.settings run function bastionbuilder:internal/exact/units_buried_base
 execute if score #run_floor kbt.settings matches 2 unless score #bb_buried_same kbt.settings matches 1 run function bastionbuilder:internal/exact/units_buried_base
 scoreboard players operation #last_h_lo kbt.settings = units_lower bastion.temp
 execute if score units_lower bastion.temp matches 1..10 run function kbt:arena/generator/lower/units/rot_0/group_0

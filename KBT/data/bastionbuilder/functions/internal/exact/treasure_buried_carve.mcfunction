@@ -1,27 +1,3 @@
-fill 1000 164 1000 1007 179 1007 air replace #kbt:arena/not_air
-fill 1000 148 1000 1007 163 1007 air replace #kbt:arena/not_air
-fill 1000 132 1000 1007 147 1007 air replace #kbt:arena/not_air
-fill 1000 164 1008 1007 179 1023 air replace #kbt:arena/not_air
-fill 1000 148 1008 1007 163 1023 air replace #kbt:arena/not_air
-fill 1000 132 1008 1007 147 1023 air replace #kbt:arena/not_air
-fill 1000 164 1024 1007 179 1037 air replace #kbt:arena/not_air
-fill 1000 148 1024 1007 163 1037 air replace #kbt:arena/not_air
-fill 1000 132 1024 1007 147 1037 air replace #kbt:arena/not_air
-fill 1008 164 1000 1023 179 1007 air replace #kbt:arena/not_air
-fill 1008 148 1000 1023 163 1007 air replace #kbt:arena/not_air
-fill 1008 132 1000 1023 147 1007 air replace #kbt:arena/not_air
-fill 1008 164 1008 1023 179 1023 air replace #kbt:arena/not_air
-fill 1008 148 1008 1023 163 1023 air replace #kbt:arena/not_air
-fill 1008 132 1008 1023 147 1023 air replace #kbt:arena/not_air
-fill 1008 164 1024 1023 179 1037 air replace #kbt:arena/not_air
-fill 1008 148 1024 1023 163 1037 air replace #kbt:arena/not_air
-fill 1008 132 1024 1023 147 1037 air replace #kbt:arena/not_air
-fill 1024 164 1000 1037 179 1007 air replace #kbt:arena/not_air
-fill 1024 148 1000 1037 163 1007 air replace #kbt:arena/not_air
-fill 1024 132 1000 1037 147 1007 air replace #kbt:arena/not_air
-fill 1024 164 1008 1037 179 1023 air replace #kbt:arena/not_air
-fill 1024 148 1008 1037 163 1023 air replace #kbt:arena/not_air
-fill 1024 132 1008 1037 147 1023 air replace #kbt:arena/not_air
-fill 1024 164 1024 1037 179 1037 air replace #kbt:arena/not_air
-fill 1024 148 1024 1037 163 1037 air replace #kbt:arena/not_air
-fill 1024 132 1024 1037 147 1037 air replace #kbt:arena/not_air
+setblock ~ ~ ~ structure_block{mode:"LOAD",rotation:"NONE",name:"bastionbuilder:exact/treasure_buried_base"}
+setblock ~ ~1 ~ redstone_block
+fill ~ ~ ~ ~ ~1 ~ air

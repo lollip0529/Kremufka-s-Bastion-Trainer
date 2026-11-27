@@ -1,3 +1,4 @@
+scoreboard players set #gen_precleaned kbt.settings 0
 function kbt:arena/lava_fix/cancel
 function kbt:settings/init
 function kbt:arena/invalidate
@@ -42,4 +43,3 @@ function kbt:imports/init
 function kbt:practice/difficulty
 execute in minecraft:the_nether run function kbt:debug/apply
 tellraw @a [{"text":"KBT loaded","color":"gold"}]
-execute if data storage kbt:release pending run schedule function kbt:release/prepare 2t replace

@@ -7,7 +7,7 @@ scoreboard players set #kbt_tick5 kbt.settings 0
 scoreboard players set #kbt_tick20 kbt.settings 0
 scoreboard players set #kbt_tick100 kbt.settings 0
 scoreboard players set #ui_cd_active kbt.settings 12
-scoreboard players set #custom_settings_chest kbt.settings 0
+execute unless score #custom_settings_chest kbt.settings matches 0..1 run scoreboard players set #custom_settings_chest kbt.settings 0
 execute in minecraft:overworld if entity @e[type=minecraft:armor_stand,tag=kbt.settings_chest] run scoreboard players set #custom_settings_chest kbt.settings 1
 execute in minecraft:the_end if entity @e[type=minecraft:armor_stand,tag=kbt.settings_chest] run scoreboard players set #custom_settings_chest kbt.settings 1
 execute in minecraft:the_nether positioned 23.5 129 33.5 if entity @e[type=minecraft:armor_stand,tag=kbt.settings_chest,distance=1..] run scoreboard players set #custom_settings_chest kbt.settings 1

@@ -1,4 +1,4 @@
-execute in minecraft:the_nether if score #ss_wait kbt.settings matches 1 unless entity @a[tag=kbt.ss_waiting,nbt={Dimension:"minecraft:the_nether"},scores={kbt.hp=1..}] run function kbt:savestate/cancel
+execute in minecraft:the_nether if score #ss_wait kbt.settings matches 1 unless entity @a[tag=kbt.ss_waiting,predicate=kbt:in_nether,scores={kbt.hp=1..}] run function kbt:savestate/cancel
 execute unless score #ss_wait kbt.settings matches 1 as @a[tag=kbt.ss_waiting] run function kbt:savestate/recover_player
 execute as @a[tag=kbt.ss_health_job] at @s run function kbt:savestate/player/health/finish
 execute in minecraft:the_nether unless score #ss_wait kbt.settings matches 1 if score #ss_has_frozen kbt.settings matches 1 run function kbt:savestate/check_frozen

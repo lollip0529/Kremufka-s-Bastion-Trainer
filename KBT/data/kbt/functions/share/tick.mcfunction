@@ -1,5 +1,5 @@
 execute as @a[scores={kbt.share=1..}] run function kbt:share/input
-execute as @a[tag=kbt.share_user,tag=kbt.share_away] at @s unless entity @s[nbt={Dimension:"minecraft:the_nether"},nbt=!{Health:0.0f},x=997,y=229,z=-1106,dx=10,dy=10,dz=10] run function kbt:share/booth/close
+execute as @a[tag=kbt.share_user,tag=kbt.share_away] at @s unless entity @s[predicate=kbt:in_nether,scores={kbt.hp=1..},x=997,y=229,z=-1106,dx=10,dy=10,dz=10] run function kbt:share/booth/close
 execute if score #sh_booth kbt.settings matches 1.. unless entity @a[tag=kbt.share_user] in minecraft:the_nether run function kbt:share/booth/clear
 execute as @a[tag=kbt.share_user] unless score #sh_booth kbt.settings matches 1.. run function kbt:share/booth/close
 execute if score #sh_active kbt.settings matches 1 in minecraft:the_nether unless block 1000 231 -1102 minecraft:structure_block as @a[tag=kbt.share_user,limit=1] run function kbt:share/booth/close

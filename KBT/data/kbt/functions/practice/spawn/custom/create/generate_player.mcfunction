@@ -9,6 +9,7 @@ scoreboard players set #gp_generation kbt.settings 1
 function kbt:arena/generate_selected
 scoreboard players set #gp_generation kbt.settings 0
 gamemode creative @s
+function kbt:arena/mark_creative_dirty
 tag @s remove kbt.rp_context
 tag @s remove kbt.mv_context
 scoreboard players set @s kbt.run 0

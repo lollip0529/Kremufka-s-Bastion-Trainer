@@ -18,6 +18,7 @@ scoreboard players set @s kbt.rc_use 0
 scoreboard players set @s kbt.rc_carrot 0
 scoreboard players set @s kbt.rc_cd 0
 gamemode creative @s
+function kbt:arena/mark_creative_dirty
 execute unless data storage kbt:routes draft run function kbt:routes/creator/new_draft
 execute store result score #rc_tool kbt.settings run data get storage kbt:routes draft.tool
 execute unless score #rc_tool kbt.settings matches 1..8 unless score #rc_tool kbt.settings matches 10..21 run scoreboard players set #rc_tool kbt.settings 1

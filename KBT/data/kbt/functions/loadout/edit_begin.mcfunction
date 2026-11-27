@@ -6,5 +6,6 @@ function kbt:routes/practice/stop
 schedule clear kbt:practice/generate
 scoreboard players set @s kbt.run 0
 gamemode creative @s
+function kbt:arena/mark_creative_dirty
 execute in minecraft:the_nether run forceload add 1004 -1007
 schedule function kbt:loadout/edit_restore 2t replace

@@ -9,6 +9,10 @@ scoreboard objectives add kbt.it_blocks dummy
 scoreboard objectives add kbt.it_layout dummy
 scoreboard objectives add kbt.damage minecraft.custom:minecraft.damage_taken
 scoreboard objectives add kbt.blocks dummy
+scoreboard objectives add kbt.use_flint minecraft.used:minecraft.flint_and_steel
+scoreboard objectives add kbt.use_fcharge minecraft.used:minecraft.fire_charge
+scoreboard objectives add kbt.use_lava_bkt minecraft.used:minecraft.lava_bucket
+scoreboard objectives add kbt.use_bucket minecraft.used:minecraft.bucket
 advancement revoke @a only kbt:debug/placed_block
 advancement revoke @a only kbt:debug/ignited_block
 team add kbt.info_pigs

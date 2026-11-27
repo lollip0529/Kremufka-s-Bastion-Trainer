@@ -11,3 +11,4 @@ function kbt:route_browser/test/tick
 function kbt:routes/tutorial/tick
 
 function kbt:pb_info/tick
+execute unless score #arena_blocks_dirty kbt.settings matches 1 if entity @a[gamemode=creative,x=936,y=128,z=936,dx=127,dy=127,dz=127] run function kbt:arena/mark_creative_dirty

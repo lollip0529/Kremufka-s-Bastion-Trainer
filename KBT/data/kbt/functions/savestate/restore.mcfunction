@@ -2,6 +2,11 @@ title @s actionbar {"text":"Restoring savestate","color":"aqua"}
 function kbt:savestate/rules_begin
 scoreboard players set #ss_action kbt.settings 1
 execute as @e[type=!minecraft:player,x=936,y=128,z=936,dx=127,dy=127,dz=127] run function kbt:savestate/discard_entity
+execute if data storage kbt:savestate current{full:0b} run scoreboard players operation #ss_prev_rf kbt.settings = #run_floor kbt.settings
+execute if data storage kbt:savestate current{full:0b} store result score #run_floor kbt.settings run data get storage kbt:savestate current.floor
+execute if data storage kbt:savestate current{full:0b} run scoreboard players set #arena_floor_dirty kbt.settings 1
+execute if data storage kbt:savestate current{full:0b} run function kbt:arena/floor
+execute if data storage kbt:savestate current{full:0b} run scoreboard players operation #run_floor kbt.settings = #ss_prev_rf kbt.settings
 execute if data storage kbt:savestate current{full:0b} run function kbt:arena/reset_outer
 execute if data storage kbt:savestate current{full:0b} run function kbt:arena/reset_high
 execute if data storage kbt:savestate current{bank:0,full:0b} run function kbt:savestate/tiles/fast_a

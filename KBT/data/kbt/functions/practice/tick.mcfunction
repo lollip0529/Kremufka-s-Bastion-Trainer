@@ -11,7 +11,7 @@ execute as @a[scores={kbt.drop_iron=1..}] run function kbt:practice/drop
 execute as @a[scores={kbt.drop_gold=1..}] run function kbt:practice/drop
 execute as @a[scores={kbt.drop_diamond=1..}] run function kbt:practice/drop
 execute as @a[scores={kbt.drop_nether=1..}] run function kbt:practice/drop
-execute as @a[scores={kbt.gp_timer=1..}] in minecraft:the_nether unless entity @s[gamemode=survival,scores={kbt.run=1..2,kbt.hp=1..},distance=0..] run function kbt:practice/timer/abort
+execute as @a[scores={kbt.gp_timer=1..}] unless entity @s[gamemode=survival,scores={kbt.run=1..2,kbt.hp=1..},predicate=kbt:in_nether] run function kbt:practice/timer/abort
 execute as @a[scores={kbt.gp_timer=2,kbt.run=2}] run function kbt:practice/timer/tick
 execute as @a[scores={kbt.run=1,kbt.hp=1..}] at @s run function kbt:practice/movement/check
 function kbt:practice/difficulty

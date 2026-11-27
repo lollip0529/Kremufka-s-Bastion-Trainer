@@ -23,7 +23,7 @@ scoreboard players operation #ss_next kbt.settings = #ss_bank kbt.settings
 scoreboard players add #ss_next kbt.settings 1
 execute if score #ss_next kbt.settings matches 2 run scoreboard players set #ss_next kbt.settings 0
 scoreboard players set #ss_fast kbt.settings 0
-execute if score #arena_built_floor kbt.settings matches 0..1 if score #arena_outer_dirty kbt.settings matches 0 if score #arena_high_dirty kbt.settings matches 0 run scoreboard players set #ss_fast kbt.settings 1
+execute if score #arena_built_floor kbt.settings matches 0..1 if score #arena_outer_dirty kbt.settings matches 0 if score #arena_high_dirty kbt.settings matches 0 if entity @s[x=960,y=128,z=960,dx=95,dy=79,dz=95] run scoreboard players set #ss_fast kbt.settings 1
 execute if score #ss_fast kbt.settings matches 1 run data modify storage kbt:savestate draft.full set value 0b
 execute if score #ss_fast kbt.settings matches 1 store result storage kbt:savestate draft.floor int 1 run scoreboard players get #arena_built_floor kbt.settings
 execute unless score #ss_fast kbt.settings matches 1 run data modify storage kbt:savestate draft.full set value 1b

@@ -10,6 +10,8 @@ scoreboard players set #gen_precleaned kbt.settings 1
 execute in the_nether positioned 1000 129 1000 run function bastionbuilder:generate
 scoreboard players set #gen_precleaned kbt.settings 0
 scoreboard players set #bb_inplace kbt.settings 0
+scoreboard players set #bb_clean kbt.settings 0
+scoreboard players set #bb_clean_fixed kbt.settings 0
 scoreboard players set #bb_buried_same kbt.settings 0
 execute in minecraft:the_nether run function kbt:arena/seed_chests
 execute in minecraft:the_nether run function kbt:arena/floor

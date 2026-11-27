@@ -1,3 +1,6 @@
+scoreboard players set #bb_clean_fixed kbt.settings 0
+scoreboard players set #bb_clean kbt.settings 0
+function bastionbuilder:internal/fast/init
 execute store result score #rr_tile_drops kbt.settings run gamerule doTileDrops
 execute store result score #rr_mob_loot kbt.settings run gamerule doMobLoot
 gamerule doTileDrops false

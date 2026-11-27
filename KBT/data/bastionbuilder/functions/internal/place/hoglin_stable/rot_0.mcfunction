@@ -1,7 +1,20 @@
-execute positioned ~ ~ ~ run function bastionbuilder:internal/place/hoglin_stable/lower/lower/random_lower/rot_0
-execute positioned ~-16 ~-1 ~16 run function bastionbuilder:internal/place/hoglin_stable/walls/wall_base/rot_0
+function bastionbuilder:internal/fast/init
+function bastionbuilder:internal/place/hoglin_stable/lower/lower/random_lower/rot_0
+function bastionbuilder:internal/fast/hs/wall_base
+scoreboard players add current bastion.rng 3
+execute positioned ~-16 ~-1 ~16 run function bastionbuilder:internal/extensions/hoglin_stable/walls/wall_base/rot_0
+scoreboard players operation #bb_slot_prev bastion.temp = #last_s_lw kbt.settings
 execute positioned ~-18 ~-1 ~47 run function bastionbuilder:internal/place/hoglin_stable/walls/wall/left_wall/left_wall_controller/rot_270
+scoreboard players operation #last_s_lw kbt.settings = #bb_cur_var bastion.temp
+scoreboard players operation #bb_slot_prev bastion.temp = #last_s_rw kbt.settings
 execute positioned ~-18 ~-1 ~15 run function bastionbuilder:internal/place/hoglin_stable/walls/wall/right_wall/right_wall_controller/rot_270
+scoreboard players operation #last_s_rw kbt.settings = #bb_cur_var bastion.temp
+scoreboard players operation #bb_slot_prev bastion.temp = #last_s_lr kbt.settings
 execute positioned ~-18 ~23 ~32 run function bastionbuilder:internal/place/hoglin_stable/ramparts/rampart/left_rampart/left_ramp_ctrl/rot_0
+scoreboard players operation #last_s_lr kbt.settings = #bb_cur_var bastion.temp
+scoreboard players operation #bb_slot_prev bastion.temp = #last_s_mr kbt.settings
 execute positioned ~-16 ~23 ~16 run function bastionbuilder:internal/place/hoglin_stable/ramparts/rampart/middle_rampart/mid_ramp_ctrl/rot_0
+scoreboard players operation #last_s_mr kbt.settings = #bb_cur_var bastion.temp
+scoreboard players operation #bb_slot_prev bastion.temp = #last_s_rr kbt.settings
 execute positioned ~-18 ~23 ~ run function bastionbuilder:internal/place/hoglin_stable/ramparts/rampart/right_rampart/right_ramp_ctrl/rot_0
+scoreboard players operation #last_s_rr kbt.settings = #bb_cur_var bastion.temp

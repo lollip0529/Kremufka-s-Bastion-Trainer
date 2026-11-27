@@ -1,0 +1,14 @@
+scoreboard players set #last_b_l0 kbt.settings -1
+scoreboard players set #last_b_l1 kbt.settings -1
+scoreboard players set #last_b_lr kbt.settings -1
+scoreboard players set #last_b_rr kbt.settings -1
+scoreboard players set #last_s_lo kbt.settings -1
+scoreboard players set #last_s_lr kbt.settings -1
+scoreboard players set #last_s_lw kbt.settings -1
+scoreboard players set #last_s_mr kbt.settings -1
+scoreboard players set #last_s_rr kbt.settings -1
+scoreboard players set #last_s_rw kbt.settings -1
+scoreboard players set #last_t_ctr kbt.settings -1
+scoreboard players set #last_t_lo kbt.settings -1
+scoreboard players set #last_u_lo kbt.settings -1
+scoreboard players set #last_u_lr kbt.settings -1

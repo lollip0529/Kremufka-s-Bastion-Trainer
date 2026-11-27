@@ -10,4 +10,4 @@ execute positioned ~ ~13 ~2 run function bastionbuilder:internal/place/hoglin_st
 execute positioned ~7 ~17 ~-7 run function bastionbuilder:internal/utils/chest_loot/mark_chest
 execute positioned ~8 ~17 ~-7 run function bastionbuilder:internal/utils/chest_loot/mark_chest
 execute positioned ~11 ~17 ~-7 run function bastionbuilder:internal/utils/chest_loot/mark_chest
-execute if score id_piglins bastion.settings matches 1.. positioned ~3 ~4 ~-10 as @e[type=piglin, tag=bastion_mob, dx=9, dy=15, dz=7] run data modify entity @s CustomName set value '{"text":"ramparts/ramparts_1","color":"yellow"}'
+execute positioned ~3 ~4 ~-10 as @e[type=piglin, tag=bastion_mob, dx=9, dy=15, dz=7] run scoreboard players set @s kbt.origin 13

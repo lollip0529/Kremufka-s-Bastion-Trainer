@@ -52,3 +52,4 @@ execute store result score #ss_z kbt.settings run data get entity @s Pos[2] 1000
 scoreboard players set #ss_hud kbt.settings 0
 function kbt:savestate/hud
 playsound minecraft:block.note_block.pling master @s ~ ~ ~ 0.5 1.0
+scoreboard players set #arena_fire_dirty kbt.settings 1

@@ -1,10 +1,10 @@
-execute if score #run_floor kbt.settings matches 2 run function bastionbuilder:internal/exact/ba_hoglin_stable_ramparts_ramparts_3
-execute if score #bb_inplace kbt.settings matches 1 run function bastionbuilder:internal/exact/pa_hoglin_stable_ramparts_ramparts_3
-clone ~ ~ ~ ~ ~1 ~ ~ 254 ~
-function bastionbuilder:internal/foundations/hoglin_stable/ramparts/ramparts_3/rot_0
-function bastionbuilder:internal/processors/hoglin_stable/ramparts/ramparts_3/processor_0/rot_0
-function bastionbuilder:internal/processors/hoglin_stable/ramparts/ramparts_3/processor_1/rot_0
-function bastionbuilder:internal/processors/hoglin_stable/ramparts/ramparts_3/processor_2/rot_0
-function bastionbuilder:internal/origins/hoglin_stable/ramparts/ramparts_3
+scoreboard players set #bb_cur_var bastion.temp 2
+execute unless score #bb_clean kbt.settings matches 1 run function bastionbuilder:internal/fast/hs/ramp_r3_base_full
+execute if score #bb_clean kbt.settings matches 1 unless score #bb_slot_prev bastion.temp matches 2 run function bastionbuilder:internal/fast/hs/ramp_r3_base_full
+execute if score #bb_clean kbt.settings matches 1 if score #bb_slot_prev bastion.temp matches 2 run function bastionbuilder:internal/fast/hs/ramp_r3_base_clean
+setblock ~-2 ~19 ~ structure_block{mode:"LOAD",rotation:"NONE",posX:2,posY:-19,posZ:0,integrity:0.01f,name:"bastionbuilder:fast/hs/ramp/r3_ov0"}
+execute positioned ~-2 ~19 ~ run function bastionbuilder:internal/fast/seed_sb
+setblock ~-2 ~20 ~ redstone_block
+fill ~-2 ~19 ~ ~-2 ~20 ~ air
+scoreboard players add current bastion.rng 3
 function bastionbuilder:internal/extensions/hoglin_stable/ramparts/ramparts_3/rot_0
-fill ~ 254 ~ ~ 255 ~ air

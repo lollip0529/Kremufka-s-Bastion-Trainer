@@ -1,0 +1,2 @@
+setblock ~ ~ ~1 structure_block{mode:"LOAD",rotation:"NONE",posX:0,posY:0,posZ:-1,name:"bastionbuilder:fast/un/ramp/r1_f_r2"}
+setblock ~ ~1 ~1 redstone_block

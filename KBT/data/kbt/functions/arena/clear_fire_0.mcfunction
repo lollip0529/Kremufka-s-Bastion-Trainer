@@ -1,0 +1,10 @@
+fill 969 130 984 993 193 1003 air replace #kbt:arena/fire
+fill 969 130 1004 993 193 1023 air replace #kbt:arena/fire
+fill 969 130 1024 993 193 1043 air replace #kbt:arena/fire
+fill 969 130 1044 993 193 1047 air replace #kbt:arena/fire
+fill 1025 130 984 1030 193 1047 air replace #kbt:arena/fire
+fill 994 130 984 1024 193 995 air replace #kbt:arena/fire
+fill 994 130 996 1024 193 1011 air replace #kbt:arena/fire
+fill 994 130 1012 1024 193 1027 air replace #kbt:arena/fire
+fill 994 130 1028 1024 193 1043 air replace #kbt:arena/fire
+fill 994 130 1044 1024 193 1047 air replace #kbt:arena/fire

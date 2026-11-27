@@ -38,4 +38,4 @@ execute positioned ~22 ~19 ~43 run function bastionbuilder:internal/place/mobs/h
 execute positioned ~5 ~19 ~37 run function bastionbuilder:internal/place/mobs/piglin
 execute positioned ~4 ~19 ~6 run function bastionbuilder:internal/place/mobs/hoglin
 
-execute if score id_piglins bastion.settings matches 1.. positioned ~4 ~1 ~2 as @e[type=piglin, tag=bastion_mob, dx=21, dy=18, dz=43] run data modify entity @s CustomName set value '{"text":"lower","color":"yellow"}'
+execute positioned ~4 ~1 ~2 as @e[type=piglin, tag=bastion_mob, dx=21, dy=18, dz=43] run scoreboard players set @s kbt.origin 7

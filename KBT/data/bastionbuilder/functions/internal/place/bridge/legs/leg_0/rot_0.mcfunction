@@ -1,11 +1,10 @@
-execute if score #run_floor kbt.settings matches 2 run function bastionbuilder:internal/exact/ba_bridge_legs_leg_0
-execute if score #bb_inplace kbt.settings matches 1 run function bastionbuilder:internal/exact/pa_bridge_legs_leg_0
-clone ~ ~ ~ ~ ~1 ~ ~ 254 ~
-function bastionbuilder:internal/foundations/bridge/legs/leg_0/rot_0
-function bastionbuilder:internal/processors/bridge/legs/leg_0/processor_0/rot_0
-fill ~ ~ ~ ~ ~1 ~ air
-function bastionbuilder:internal/processors/bridge/legs/leg_0/processor_1/rot_0
-function bastionbuilder:internal/processors/bridge/legs/leg_0/processor_2/rot_0
-function bastionbuilder:internal/origins/bridge/legs/leg_0
-function bastionbuilder:internal/extensions/bridge/legs/leg_0/rot_0
-fill ~ 254 ~ ~ 255 ~ air
+scoreboard players set #bb_cur_var bastion.temp 0
+execute unless score #bb_clean kbt.settings matches 1 run function bastionbuilder:internal/fast/br/leg_l0_base_full
+execute if score #bb_clean kbt.settings matches 1 if score #bb_slot_prev bastion.temp matches -1 run function bastionbuilder:internal/fast/br/leg_l0_base_full
+execute if score #bb_clean kbt.settings matches 1 if score #bb_slot_prev bastion.temp matches 0 run function bastionbuilder:internal/fast/br/leg_l0_base_clean
+execute if score #bb_clean kbt.settings matches 1 if score #bb_slot_prev bastion.temp matches 1 run function bastionbuilder:internal/fast/br/leg_l0_f_1
+setblock ~ ~16 ~2 structure_block{mode:"LOAD",rotation:"NONE",posX:0,posY:-8,posZ:-2,integrity:0.01f,name:"bastionbuilder:fast/br/leg/l0_ov0"}
+execute positioned ~ ~16 ~2 run function bastionbuilder:internal/fast/seed_sb
+setblock ~ ~17 ~2 redstone_block
+fill ~ ~16 ~2 ~ ~17 ~2 air
+scoreboard players add current bastion.rng 3

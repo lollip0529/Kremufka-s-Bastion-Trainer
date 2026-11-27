@@ -7,4 +7,4 @@ execute positioned ~-11 ~19 ~-14 run function bastionbuilder:internal/place/mobs
 execute positioned ~-12 ~19 ~-12 run function bastionbuilder:internal/place/mobs/piglin
 execute positioned ~-2 ~4 ~-5 run function bastionbuilder:internal/utils/chest_loot/mark_chest
 execute positioned ~-3 ~4 ~-5 run function bastionbuilder:internal/utils/chest_loot/mark_chest
-execute if score id_piglins bastion.settings matches 1.. positioned ~-13 ~3 ~-14 as @e[type=piglin, tag=bastion_mob, dx=11, dy=16, dz=11] run data modify entity @s CustomName set value '{"text":"walls/wall_base","color":"yellow"}'
+execute positioned ~-13 ~3 ~-14 as @e[type=piglin, tag=bastion_mob, dx=11, dy=16, dz=11] run scoreboard players set @s kbt.origin 21

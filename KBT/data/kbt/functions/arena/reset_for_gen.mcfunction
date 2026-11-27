@@ -35,6 +35,7 @@ scoreboard players set @a kbt.use_bucket 0
 scoreboard players set @a kbt.use_lava_bkt 0
 scoreboard players set @a kbt.use_fcharge 0
 scoreboard players set @a kbt.use_flint 0
+execute as @a[predicate=kbt:mined_since_arm] run function kbt:practice/movement/mining/reset
 execute if score #bb_inplace kbt.settings matches 0 run scoreboard players set #arena_fire_dirty kbt.settings 0
 scoreboard players set #gen_target kbt.settings -1
 kill @e[x=936,y=128,z=936,dx=127,dy=127,dz=127,type=!player]

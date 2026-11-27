@@ -10,6 +10,7 @@ execute if entity @a[scores={kbt.use_bucket=1..}] run scoreboard players set #ar
 execute if entity @a[scores={kbt.use_lava_bkt=1..}] run function kbt:arena/mark_creative_dirty
 execute if entity @a[scores={kbt.use_fcharge=1..}] run scoreboard players set #arena_fire_dirty kbt.settings 1
 execute if entity @a[scores={kbt.use_flint=1..}] run scoreboard players set #arena_fire_dirty kbt.settings 1
+execute if entity @a[scores={kbt.mine436=1..}] run scoreboard players set #arena_buried_dirty kbt.settings 1
 execute if score #arena_blocks_dirty kbt.settings matches 1 run scoreboard players set #arena_buried_dirty kbt.settings 1
 execute if score #arena_built_floor kbt.settings matches 2 if score #arena_built_type kbt.settings matches 0..3 if score #arena_buried_dirty kbt.settings matches 0 if score #arena_outer_dirty kbt.settings matches 0 if score #arena_high_dirty kbt.settings matches 0 if score #natural_mobs kbt.settings matches 0 run scoreboard players set #buried_fast kbt.settings 1
 execute if score #buried_fast kbt.settings matches 1 if score #gen_target kbt.settings matches 0..3 if score #arena_built_type kbt.settings = #gen_target kbt.settings run scoreboard players set #bb_buried_same kbt.settings 1
@@ -39,6 +40,7 @@ scoreboard players set @a kbt.use_bucket 0
 scoreboard players set @a kbt.use_lava_bkt 0
 scoreboard players set @a kbt.use_fcharge 0
 scoreboard players set @a kbt.use_flint 0
+execute as @a[predicate=kbt:mined_since_arm] run function kbt:practice/movement/mining/reset
 execute if score #bb_buried_same kbt.settings matches 0 run scoreboard players set #arena_fire_dirty kbt.settings 0
 scoreboard players set #gen_target kbt.settings -1
 kill @e[x=936,y=128,z=936,dx=127,dy=127,dz=127,type=!player]
